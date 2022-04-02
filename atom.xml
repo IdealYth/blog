@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-02T12:30:24.197Z</updated>
+  <updated>2022-04-02T13:36:15.898Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>cms、后台、后端、web服务器一些术语的理解</title>
+    <link href="http://example.com/2022/04/02/cms%E3%80%81%E5%90%8E%E5%8F%B0%E3%80%81%E5%90%8E%E7%AB%AF%E3%80%81web%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%80%E4%BA%9B%E6%9C%AF%E8%AF%AD%E7%9A%84%E7%90%86%E8%A7%A3/"/>
+    <id>http://example.com/2022/04/02/cms%E3%80%81%E5%90%8E%E5%8F%B0%E3%80%81%E5%90%8E%E7%AB%AF%E3%80%81web%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%80%E4%BA%9B%E6%9C%AF%E8%AF%AD%E7%9A%84%E7%90%86%E8%A7%A3/</id>
+    <published>2022-04-02T13:32:44.000Z</published>
+    <updated>2022-04-02T13:36:15.898Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>CMS</strong>：是模板式的网站开发工具，直接套用模板开发网站，肯定包括后台管理系统，一套cms后台管理都挺类似的</p><p><strong>后台管理系统</strong>：可能是用某种语言写出来的一个管理网站的系统</p><p>转载自百度知道的一个解释：<br>但凡CMS，一定是有一套资深的网站后台管理系统的，功能强大的还能直接管理网站前端的一些功能。<br>但是网站后台管理系统不一定来源于CMS，也会有技术人员直接用PHP或者.net直接开发而成。<br>说白了就是CMS是半成品，网站后台管理系统是成品。所以二者的区别是，cms一定带有网站后台管理系统，但网站后台管理系统并不一定是CMS，有可能直接用语言写出来。</p><p><strong>后端</strong>：前端是写代码给浏览器看的。后端是写代码给服务器看的。后端就是一些应用程序，部署在web服务器上，前端通过这些后端应用程序来和数据库交互等。</p><p><strong>web服务器</strong>：就是一个容器，里面放着网站文件等</p><p>指服务器上运行着的一个软件，可以处理浏览器等Web客户端的请求并返回相应响应，也可以放置网站文件，让全世界浏览；可以放置数据文件，让全世界下载。目前最主流的三个Web服务器是Apache、 Nginx 、IIS。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;CMS&lt;/strong&gt;：是模板式的网站开发工具，直接套用模板开发网站，肯定包括后台管理系统，一套cms后台管理都挺类似的&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;后台管理系统&lt;/strong&gt;：可能是用某种语言写出来的一个管理网站的系统&lt;/p&gt;
+&lt;p&gt;转载自百度知道</summary>
+      
+    
+    
+    
+    <category term="web安全学习" scheme="http://example.com/categories/web%E5%AE%89%E5%85%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="web安全" scheme="http://example.com/tags/web%E5%AE%89%E5%85%A8/"/>
+    
+    <category term="cms" scheme="http://example.com/tags/cms/"/>
+    
+    <category term="web服务器" scheme="http://example.com/tags/web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一篇文章</title>
+    <link href="http://example.com/2022/04/02/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+    <id>http://example.com/2022/04/02/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</id>
+    <published>2022-04-02T13:31:02.000Z</published>
+    <updated>2022-04-02T13:32:11.176Z</updated>
+    
+    <content type="html"><![CDATA[<p>忙活了一天终于搭建好博客了，我滴个天啊！！！ </p><p>冒号后面一定要加个空格！！！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;忙活了一天终于搭建好博客了，我滴个天啊！！！ &lt;/p&gt;
+&lt;p&gt;冒号后面一定要加个空格！！！&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="网站建设" scheme="http://example.com/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    
+    
+    <category term="网站" scheme="http://example.com/tags/%E7%BD%91%E7%AB%99/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
