@@ -186,6 +186,25 @@
     <ul class="friends-link-list">
         
             <li class="friends-link-item">
+                <a target="_blank" rel="noopener" href="https://amanyoo.github.io/">
+                    <div class="content">
+                        <div class="avatar radius">
+                            
+                                <img class="radius"
+                                     src="https://amanyoo.github.io/img/aman5.webp"
+                                     onerror="this.style.display='none'"
+                                >
+                            
+                        </div>
+                        <div class="info">
+                            <div class="name ellipsis">AManYoo</div>
+                            <div class="description ellipsis">能坚持别人不能坚持的，才能拥有别人不能拥有的。</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        
+            <li class="friends-link-item">
                 <a target="_blank" rel="noopener" href="https://xpoet.cn/">
                     <div class="content">
                         <div class="avatar radius">
@@ -230,10 +249,91 @@
         
         <div class="page-template-content markdown-body">
             
-                
+                <p><strong>若要交换友链，请先将本站链接添加到你的网站，然后按下列&lt;&lt;格式&gt;&gt;留言</strong>。</p>
+<p><strong>信息依次为：名称、链接、描述、头像。</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">name: 理想青年</span><br><span class="line">link: https://idealyth.github.io/</span><br><span class="line">description: 心有猛虎，细嗅蔷薇。</span><br><span class="line">avatar: https://pic.netbian.com/uploads/allimg/220322/232437-16479626777bb2.jpg</span><br></pre></td></tr></table></figure>
+
+
             
         </div>
         <div class="page-template-comments">
+            
+                <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fas fa-comments">&nbsp;评论</i>
+    </div>
+    
+
+        
+            
+    <div class="valine-container">
+        <script data-pjax
+                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+        <div id="vcomments"></div>
+        <script data-pjax>
+            function loadValine() {
+                new Valine({
+                    el: '#vcomments',
+                    appId: '562faema307N5X8bof7RojiO-gzGzoHsz',
+                    appKey: 'EVBP1qXHDIxVo8hgiMchygVm',
+                    meta: ['nick', 'mail', 'link'],
+                    avatar: 'wavatar',
+                    enableQQ: true,
+                    placeholder: '啦啦啦啦啦啦啦~',
+                    lang: 'zh-CN'.toLowerCase()
+                });
+
+                function getAuthor(language) {
+                    switch (language) {
+                        case 'en':
+                            return 'Author';
+                        case 'zh-CN':
+                            return '博主';
+                        default:
+                            return 'Master';
+                    }
+                }
+
+                // Add "Author" identify
+                const getValineDomTimer = setInterval(() => {
+                    const vcards = document.querySelectorAll('#vcomments .vcards .vcard');
+                    if (vcards.length > 0) {
+                        let author = '理想青年';
+
+                        if (author) {
+                            for (let vcard of vcards) {
+                                const vnick_dom = vcard.querySelector('.vhead .vnick');
+                                const vnick = vnick_dom.innerHTML;
+                                if (vnick === author) {
+                                    vnick_dom.innerHTML = `${vnick} <span class="author">${getAuthor(KEEP.hexo_config.language)}</span>`
+                                }
+                            }
+                        }
+                        clearInterval(getValineDomTimer);
+                    } else {
+                        clearInterval(getValineDomTimer);
+                    }
+                }, 2000);
+            }
+
+            if ('true') {
+                const loadValineTimeout = setTimeout(() => {
+                    loadValine();
+                    clearTimeout(loadValineTimeout);
+                }, 1000);
+            } else {
+                window.addEventListener('DOMContentLoaded', loadValine);
+            }
+        </script>
+    </div>
+
+
+
+        
+    
+</div>
+
             
         </div>
     </div>
