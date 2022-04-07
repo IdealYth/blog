@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-03T12:30:29.289Z</updated>
+  <updated>2022-04-07T10:49:29.640Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安装docker-compose</title>
+    <link href="http://example.com/2022/04/07/%E5%AE%89%E8%A3%85docker-compose/"/>
+    <id>http://example.com/2022/04/07/%E5%AE%89%E8%A3%85docker-compose/</id>
+    <published>2022-04-07T10:47:57.000Z</published>
+    <updated>2022-04-07T10:49:29.640Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="安装docker-compose"><a href="#安装docker-compose" class="headerlink" title="安装docker-compose"></a>安装docker-compose</h1><p>因为一直文件下载失败，所以直接在github上下载下来，在移到虚拟机里。</p><p>github地址：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/docker/compose/releases</span><br></pre></td></tr></table></figure><p>然后执行命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo DOCKER_CONFIG=$&#123;DOCKER_CONFIG:-$HOME/.docker&#125;  //跟着官方文档来的</span><br><span class="line">sudo mkdir -p mkdir -p /usr/local/lib/docker/cli-plugins  //创建多层目录</span><br><span class="line">sudo mv docker-compose-linux-x86_64 /usr/local/lib/docker/cli-plugins/docker-compose    //把文件移到指定目录下并更名为docker-compose</span><br></pre></td></tr></table></figure><p>对二进制文件应用可执行权限：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose</span><br></pre></td></tr></table></figure><p>测试是够安装成功</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker compose version</span><br><span class="line">Docker Compose version v2.4.1</span><br></pre></td></tr></table></figure><p>kali账户的权限太低了，基本啥命令都得加个sudo，太烦了，得直接给他提升到root权限</p><p>小白刚接触kali和docker，安装一个这个，就捣鼓了一下午，太难了实在。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;安装docker-compose&quot;&gt;&lt;a href=&quot;#安装docker-compose&quot; class=&quot;headerlink&quot; title=&quot;安装docker-compose&quot;&gt;&lt;/a&gt;安装docker-compose&lt;/h1&gt;&lt;p&gt;因为一直文件下载失败，所以直</summary>
+      
+    
+    
+    
+    
+    <category term="docker" scheme="http://example.com/tags/docker/"/>
+    
+    <category term="kali" scheme="http://example.com/tags/kali/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo-keep主题美化</title>
