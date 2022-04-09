@@ -9,7 +9,7 @@
     
     <title>
         
-            友链 |
+            分类: docker |
         
         IdealYth&#39;s Blog
     </title>
@@ -83,7 +83,7 @@
                         </li>
                     
                         <li class="menu-item">
-                            <a class=""
+                            <a class="active"
                                href="/categories"
                             >
                                 分类
@@ -99,7 +99,7 @@
                         </li>
                     
                         <li class="menu-item">
-                            <a class="active"
+                            <a class=""
                                href="/links"
                             >
                                 友链
@@ -146,7 +146,7 @@
                 </li>
             
                 <li class="drawer-menu-item flex-center">
-                    <a class=""
+                    <a class="active"
                        href="/categories">分类</a>
                 </li>
             
@@ -156,7 +156,7 @@
                 </li>
             
                 <li class="drawer-menu-item flex-center">
-                    <a class="active"
+                    <a class=""
                        href="/links">友链</a>
                 </li>
             
@@ -181,163 +181,42 @@
 
                 
                     <div class="fade-in-down-animation">
-    <div class="page-template-container">
-        
-        
-            <div class="friends-link-container">
-    <ul class="friends-link-list">
-        
-            <li class="friends-link-item">
-                <a target="_blank" rel="noopener" href="https://amanyoo.github.io/">
-                    <div class="content">
-                        <div class="avatar radius">
-                            
-                                <img class="radius"
-                                     src="https://amanyoo.github.io/img/aman5.webp"
-                                     onerror="this.style.display='none'"
-                                >
-                            
-                        </div>
-                        <div class="info">
-                            <div class="name ellipsis">AManYoo</div>
-                            <div class="description ellipsis">能坚持别人不能坚持的，才能拥有别人不能拥有的。</div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-        
-            <li class="friends-link-item">
-                <a target="_blank" rel="noopener" href="https://xpoet.cn/">
-                    <div class="content">
-                        <div class="avatar radius">
-                            
-                                <img class="radius"
-                                     src="https://cdn.jsdelivr.net/gh/XPoet/image-hosting@master/common-use/avatar.jpg"
-                                     onerror="this.style.display='none'"
-                                >
-                            
-                        </div>
-                        <div class="info">
-                            <div class="name ellipsis">XPoet</div>
-                            <div class="description ellipsis">所有命运的馈赠，早已在暗中标好价格。</div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-        
-            <li class="friends-link-item">
-                <a target="_blank" rel="noopener" href="https://jinzhanqi.com/">
-                    <div class="content">
-                        <div class="avatar radius">
-                            
-                                <img class="radius"
-                                     src="https://s3.ax1x.com/2020/11/17/DVvkB4.jpg"
-                                     onerror="this.style.display='none'"
-                                >
-                            
-                        </div>
-                        <div class="info">
-                            <div class="name ellipsis">不知名艺术家</div>
-                            <div class="description ellipsis">love artist, love code.</div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-        
-    </ul>
-    <div class="clear"></div>
-</div>
-
-        
-        <div class="page-template-content markdown-body">
-            
-                <p><strong>若要交换友链，请先将本站链接添加到你的网站，然后按下列&lt;&lt;格式&gt;&gt;留言</strong>。</p>
-<p><strong>信息依次为：名称、链接、描述、头像。</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">name: 理想青年</span><br><span class="line">link: https://idealyth.github.io/</span><br><span class="line">description: 心有猛虎，细嗅蔷薇。</span><br><span class="line">avatar: https://pic.netbian.com/uploads/allimg/220322/232437-16479626777bb2.jpg</span><br></pre></td></tr></table></figure>
-
-
-            
+    <div class="category-container">
+        <div class="category-name">
+            <i class="fas fa-folder"></i>&nbsp;docker
         </div>
-        <div class="page-template-comments">
+        <div class="category-post-list">
             
-                <div class="comments-container">
-    <div id="comment-anchor"></div>
-    <div class="comment-area-title">
-        <i class="fas fa-comments">&nbsp;评论</i>
-    </div>
+<div class="archive-list-container">
     
-
-        
-            
-    <div class="valine-container">
-        <script data-pjax
-                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
-        <div id="vcomments"></div>
-        <script data-pjax>
-            function loadValine() {
-                new Valine({
-                    el: '#vcomments',
-                    appId: '562faema307N5X8bof7RojiO-gzGzoHsz',
-                    appKey: 'EVBP1qXHDIxVo8hgiMchygVm',
-                    meta: ['nick', 'mail', 'link'],
-                    avatar: 'wavatar',
-                    enableQQ: true,
-                    placeholder: '啦啦啦啦啦啦啦~',
-                    lang: 'zh-CN'.toLowerCase()
-                });
-
-                function getAuthor(language) {
-                    switch (language) {
-                        case 'en':
-                            return 'Author';
-                        case 'zh-CN':
-                            return '博主';
-                        default:
-                            return 'Master';
-                    }
-                }
-
-                // Add "Author" identify
-                const getValineDomTimer = setInterval(() => {
-                    const vcards = document.querySelectorAll('#vcomments .vcards .vcard');
-                    if (vcards.length > 0) {
-                        let author = '理想青年';
-
-                        if (author) {
-                            for (let vcard of vcards) {
-                                const vnick_dom = vcard.querySelector('.vhead .vnick');
-                                const vnick = vnick_dom.innerHTML;
-                                if (vnick === author) {
-                                    vnick_dom.innerHTML = `${vnick} <span class="author">${getAuthor(KEEP.hexo_config.language)}</span>`
-                                }
-                            }
-                        }
-                        clearInterval(getValineDomTimer);
-                    } else {
-                        clearInterval(getValineDomTimer);
-                    }
-                }, 2000);
-            }
-
-            if ('true') {
-                const loadValineTimeout = setTimeout(() => {
-                    loadValine();
-                    clearTimeout(loadValineTimeout);
-                }, 1000);
-            } else {
-                window.addEventListener('DOMContentLoaded', loadValine);
-            }
-        </script>
-    </div>
-
-
-
-        
+        <section class="archive-item">
+            <div class="archive-item-header">
+                <span class="archive-year">2022</span>
+                <span class="archive-year-post-count">[1]</span>
+            </div>
+            <ul class="article-list">
+                
+                    <li class="article-item">
+                        <a class="article-title"
+                           href="/2022/04/08/docker%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/"
+                        >docker的简单使用</a>
+                        <span class="article-date">04-08</span>
+                    </li>
+                
+            </ul>
+        </section>
     
 </div>
 
-            
         </div>
+    </div>
+    <div class="category-paginator">
+        <div class="paginator">
+    
+
+    
+</div>
+
     </div>
 </div>
 
