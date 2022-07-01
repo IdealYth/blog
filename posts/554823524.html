@@ -9,7 +9,7 @@
     
     <title>
         
-            web安全一些名词解释 |
+            windows下python2和python3共存方法 |
         
         IdealYth&#39;s Blog
     </title>
@@ -184,7 +184,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">web安全一些名词解释</span>
+            <span class="title-hover-animation">windows下python2和python3共存方法</span>
         </div>
 
         
@@ -201,8 +201,8 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2022-04-02 21:32:44</span>
-        <span class="mobile">2022-04-02 21:32</span>
+        <span class="pc">2022-04-08 08:53:39</span>
+        <span class="mobile">2022-04-08 08:53</span>
     </span>
     
         <span class="article-categories article-meta-item">
@@ -210,7 +210,7 @@
             <ul>
                 
                     <li>
-                        <a href="/categories/web%E5%AE%89%E5%85%A8%E5%AD%A6%E4%B9%A0/">web安全学习</a>&nbsp;
+                        <a href="/categories/python/">python</a>&nbsp;
                     </li>
                 
             </ul>
@@ -222,15 +222,7 @@
             <ul>
                 
                     <li>
-                        <a href="/tags/web%E5%AE%89%E5%85%A8/">web安全</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/tags/cms/">cms</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/tags/web%E6%9C%8D%E5%8A%A1%E5%99%A8/">web服务器</a>&nbsp;
+                        <a href="/tags/python/">python</a>&nbsp;
                     </li>
                 
             </ul>
@@ -240,7 +232,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>428 字</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>210 字</span>
         </span>
     
     
@@ -261,14 +253,28 @@
         
 
         <div class="article-content markdown-body">
-            <p><strong>CMS</strong>：是模板式的网站开发工具，直接套用模板开发网站，肯定包括后台管理系统，一套cms后台管理都挺类似的</p>
-<p><strong>后台管理系统</strong>：可能是用某种语言写出来的一个管理网站的系统</p>
-<p>转载自百度知道的一个解释：<br>但凡CMS，一定是有一套资深的网站后台管理系统的，功能强大的还能直接管理网站前端的一些功能。<br>但是网站后台管理系统不一定来源于CMS，也会有技术人员直接用PHP或者.net直接开发而成。<br>说白了就是CMS是半成品，网站后台管理系统是成品。所以二者的区别是，cms一定带有网站后台管理系统，但网站后台管理系统并不一定是CMS，有可能直接用语言写出来。</p>
-<p><strong>后端</strong>：前端是写代码给浏览器看的。后端是写代码给服务器看的。后端就是一些应用程序，部署在web服务器上，前端通过这些后端应用程序来和数据库交互等。</p>
-<p><strong>web服务器</strong>：就是一个容器，里面放着网站文件等</p>
-<p>指服务器上运行着的一个软件，可以处理浏览器等Web客户端的请求并返回相应响应，也可以放置网站文件，让全世界浏览；可以放置数据文件，让全世界下载。目前最主流的三个Web服务器是Apache、 Nginx 、IIS。</p>
-<p><strong>exp</strong> (Exploit )漏洞利用，一般是个demo程序</p>
-<p><strong>poc</strong> (Proof of Concept)观点验证程序，一般就是个样本 用来证明和复现</p>
+            <h2 id="第一种改名法："><a href="#第一种改名法：" class="headerlink" title="第一种改名法："></a>第一种改名法：</h2><ol>
+<li><p>将python2和3安装到不同路径，因为环境变量只能添加一个版本，所以另一个版本的环境变量需要手动添加</p>
+</li>
+<li><p>把两个安装目录下的python.exe分别改成python2.exe,python3.exe</p>
+</li>
+<li><p>pip版本共存：分别执行下面的语句，即可实现2个版本pip共存</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python2 -m pip install --upgrade pip --force-reinstall</span><br><span class="line">python3 -m pip install --upgrade pip --force-reinstall </span><br></pre></td></tr></table></figure>
+</li>
+<li><p>平常使用哪个py程序，就用相应的版本命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python3 xxx.py</span><br><span class="line">python2 xxx.py</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>对应的pip安装命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip2 install xxx</span><br><span class="line">pip3 install xxx</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="第二种官方法："><a href="#第二种官方法：" class="headerlink" title="第二种官方法："></a>第二种官方法：</h2><p>在Python3（&gt;&#x3D;3.3）时，在文件夹C:\Windows\下面，python实际上安装了一个启动器py.exe</p>
+<ol>
+<li><p>使用解释器运行程序命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">py -2 xxx.py</span><br><span class="line">py -3 xxx.py</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用pip安装包</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">py -2 -m pip install XXXX</span><br><span class="line">py -3 -m pip install XXXX</span><br></pre></td></tr></table></figure></li>
+</ol>
 
         </div>
 
@@ -276,11 +282,11 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>本文标题：web安全一些名词解释</li>
+        <li>本文标题：windows下python2和python3共存方法</li>
         <li>本文作者：理想青年</li>
-        <li>创建时间：2022-04-02 21:32:44</li>
+        <li>创建时间：2022-04-08 08:53:39</li>
         <li>
-            本文链接：https://idealyth.github.io/2022/04/02/web安全一些名词解释/
+            本文链接：https://idealyth.github.io/posts/554823524.html
         </li>
         <li>
             版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -295,15 +301,7 @@
             <ul class="post-tags-box">
                 
                     <li class="tag-item">
-                        <a href="/tags/web%E5%AE%89%E5%85%A8/">#web安全</a>&nbsp;
-                    </li>
-                
-                    <li class="tag-item">
-                        <a href="/tags/cms/">#cms</a>&nbsp;
-                    </li>
-                
-                    <li class="tag-item">
-                        <a href="/tags/web%E6%9C%8D%E5%8A%A1%E5%99%A8/">#web服务器</a>&nbsp;
+                        <a href="/tags/python/">#python</a>&nbsp;
                     </li>
                 
             </ul>
@@ -315,13 +313,13 @@
                     <div class="article-prev">
                         <a class="prev"
                            rel="prev"
-                           href="/2022/04/03/hexo-keep%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/"
+                           href="/posts/2481670560.html"
                         >
                             <span class="left arrow-icon flex-center">
                               <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">hexo-keep主题美化</span>
+                                <span class="post-nav-title-item">docker的简单使用</span>
                                 <span class="post-nav-item">上一篇</span>
                             </span>
                         </a>
@@ -331,10 +329,10 @@
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/2022/04/02/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"
+                           href="/posts/4220737426.html"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">第一篇文章</span>
+                                <span class="post-nav-title-item">Kali下安装docker和docker-compose</span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                             <span class="right arrow-icon flex-center">
@@ -549,7 +547,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%A7%8D%E6%94%B9%E5%90%8D%E6%B3%95%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">第一种改名法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%A7%8D%E5%AE%98%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">第二种官方法：</span></a></li></ol>
     </div>
 </div>
         </aside>
