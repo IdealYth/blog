@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>理想青年 - 心有猛虎，细嗅蔷薇</title>
+  <title>理想青年</title>
   
-  
+  <subtitle>心有猛虎，细嗅蔷薇</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
