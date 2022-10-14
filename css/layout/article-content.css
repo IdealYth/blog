@@ -7,27 +7,27 @@ keep-mobile()
 }
 .article-content-container .article-header {
   position: relative;
-  padding-left: 46px;
+  box-sizing: border-box;
   width: 100%;
   height: 46px;
-  box-sizing: border-box;
+  padding-left: 46px;
 }
 .article-content-container .article-header .avatar {
   position: absolute;
   top: 0;
   left: 0;
+  box-sizing: border-box;
   width: 46px;
   height: 46px;
   padding: 1px;
-  box-sizing: border-box;
   border: 1px solid var(--border-color);
   border-radius: 50%;
 }
 .article-content-container .article-header .avatar img {
-  border-radius: 50%;
   width: 100%;
   height: 100%;
   background: var(--avatar-background-color);
+  border-radius: 50%;
   transition: transform 1s ease-out;
 }
 .article-content-container .article-header .avatar img:hover {
@@ -37,32 +37,32 @@ keep-mobile()
   transform: initial;
 }
 .article-content-container .article-header .info {
-  padding: 2px 0;
-  margin-left: 10px;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
+  margin-left: 10px;
+  padding: 2px 0;
 }
 .article-content-container .article-header .info .author {
-  font-weight: 600;
-  font-size: 1.18rem;
   display: flex;
   align-items: center;
+  font-weight: 600;
+  font-size: 1.18rem;
 }
 .article-content-container .article-header .info .author .name {
   color: var(--default-text-color);
 }
 .article-content-container .article-header .info .author .author-label {
   margin-left: 10px;
-  font-size: 0.8rem;
-  font-weight: 500;
   padding: 0 5px;
-  border-radius: 5px;
   color: #fff;
+  font-weight: 500;
+  font-size: 0.8rem;
   background: var(--selection-color);
+  border-radius: 5px;
 }
 .article-content-container .article-header,
 .article-content-container .article-header-meta-info {
@@ -72,14 +72,14 @@ keep-tablet()
 .article-content-container .article-content {
   margin-top: $component-spacing-value;
   padding-bottom: 10px;
+  color: var(--default-text-color);
   word-wrap: break-word;
   border-bottom: 1px solid var(--border-color);
-  color: var(--default-text-color);
 }
 .article-content-container .post-tags-box {
   display: none;
-  margin-top: 1.6rem;
   justify-content: center;
+  margin-top: 1.6rem;
   font-size: 1.1rem;
 keep-tablet()
 keep-mobile()
@@ -88,8 +88,8 @@ keep-mobile()
   margin: 0 0.25rem;
 }
 .article-content-container .post-copyright-info {
-  margin-top: $component-spacing-value;
   width: 100%;
+  margin-top: $component-spacing-value;
 keep-tablet()
 }
 .article-content-container .article-nav {
@@ -98,17 +98,17 @@ keep-tablet()
 }
 .article-content-container .article-nav .article-prev,
 .article-content-container .article-nav .article-next {
+  box-sizing: border-box;
   max-width: 220px;
   height: 100%;
-  box-sizing: border-box;
 }
 .article-content-container .article-nav .article-prev a,
 .article-content-container .article-nav .article-next a {
   position: relative;
   display: block;
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
 }
 .article-content-container .article-nav .article-prev a.prev,
 .article-content-container .article-nav .article-next a.prev {
@@ -122,8 +122,8 @@ keep-tablet()
 .article-content-container .article-nav .article-next a .arrow-icon {
   position: absolute;
   top: 0;
-  height: 100%;
   width: 16px;
+  height: 100%;
 }
 .article-content-container .article-nav .article-prev a .arrow-icon.left,
 .article-content-container .article-nav .article-next a .arrow-icon.left {
@@ -150,7 +150,7 @@ keep-tablet()
 }
 .article-content-container .article-nav .post-nav-title-item {
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  text-overflow: ellipsis;
 keep-tablet()
 }
