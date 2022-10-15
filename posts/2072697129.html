@@ -9,7 +9,7 @@
     
     <title>
         
-            网络空间搜索引擎 |
+            Java学习笔记 |
         
         IdealYth&#39;s Blog
     </title>
@@ -187,7 +187,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">网络空间搜索引擎</span>
+            <span class="title-hover-animation">Java学习笔记</span>
         </div>
 
         
@@ -209,26 +209,15 @@
         
             <i class="fa-regular fa-calendar-plus"></i>&nbsp;
         
-        <span class="pc">2022-04-14 21:00:07</span>
-        <span class="mobile">2022-04-14 21:00</span>
+        <span class="pc">2022-10-15 18:53:45</span>
+        <span class="mobile">2022-10-15 18:53</span>
     </span>
     
         <span class="article-update-date article-meta-item">
         <i class="fas fa-file-pen"></i>&nbsp;
-        <span class="pc">2022-07-02 00:40:59</span>
+        <span class="pc">2022-10-15 18:57:44</span>
     </span>
     
-    
-        <span class="article-categories article-meta-item">
-            <i class="fas fa-folder"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/categories/web%E5%AE%89%E5%85%A8/">web安全</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
     
     
         <span class="article-tags article-meta-item">
@@ -236,11 +225,7 @@
             <ul>
                 
                     <li>
-                        <a href="/tags/web%E5%AE%89%E5%85%A8/">web安全</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/">搜索引擎</a>&nbsp;
+                        <a href="/tags/Java/">Java</a>&nbsp;
                     </li>
                 
             </ul>
@@ -250,12 +235,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>230 字</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>1.7k 字</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fas fa-clock"></i>&nbsp;<span>1 分钟</span>
+            <i class="fas fa-clock"></i>&nbsp;<span>6 分钟</span>
         </span>
     
     
@@ -271,87 +256,114 @@
         
 
         <div class="article-content markdown-body">
-            <p>文章转载自：[APT-C-61团队][<a href="http://example.com/2022/03/31/%E7%BD%91%E7%BB%9C%E7%A9%BA%E9%97%B4%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/]">http://example.com/2022/03/31/网络空间搜索引擎/]</a></p>
-<h2 id="鹰图平台："><a href="#鹰图平台：" class="headerlink" title="鹰图平台："></a>鹰图平台：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://hunter.qianxin.com/</span><br></pre></td></tr></table></figure>
+            <h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><ol>
+<li><p>首先ava源代码文件会通过编译会生成后缀为.class的字节码文件，然后java命令会先运行jvm虚拟机，然后JVM会去运行类加载器，默认从当前路径下寻找指定名字的class类文件，然后类加载器会将该文件装载到虚拟机，然后虚拟机启动解释器将该文件解释成二进制文件，然后计算机执行。</p>
+</li>
+<li><p>classpath变量如果设置了，类加载器只会从设置的路径下寻找class类，没有设置的话，默认从当前路径下寻找类</p>
+</li>
+<li><p>java命令后面跟名字（不包含后缀名），不能跟路径。</p>
+</li>
+<li><p>类体中是方法体，方法体中是一行一行的java语句，java语句必须由英文分号结尾。</p>
+</li>
+<li><p>在源文件中，只要有一个class的定义，那么就肯定会生成一个class文件</p>
+</li>
+<li><p>public的类可以没有，但如果有，public修饰的类名必须和源文件名保持一致。</p>
+</li>
+<li><p>在intelj中psvm可以快速输入main函数，输入sout可以快速输入System.out.println();</p>
+</li>
+<li><p>虽然java中的标识符严格区分大小写，但是一个java源文件中同时出现了：A类和a类，那么谁在前，就生成谁。所以说最好不要让类名相同。</p>
+</li>
+<li><p>命名规范：类名，接口名首字母大写，后面每个单词首字母大写，例：StudentTest</p>
+<p>变量名，方法名首字母小写，后面每个单词首字母大写，例：studentTest</p>
+<p>所有常量名全部大写，并且单词和单词之间用下划线衔接。</p>
+</li>
+<li><p>在方法体当中声明的变量叫成员变量，在方法体之外，类体内声明的变量叫成员变量。</p>
+</li>
+<li><p>println输出完信息会自动换行，print不会换行。</p>
+</li>
+<li><p><strong>基本数据类型4类8种</strong></p>
+<p>(1)、<strong>整数型</strong> byte [1]、short[2] 、int[4] 、long[8]</p>
+<p>(2)、<strong>浮点型</strong> float [4]、 double[8]</p>
+<p>(3)、<strong>字符型</strong> char[2]，存放单个字符，如’a’、‘男’，单个字母占1个字节，单个汉字占2个字节</p>
+<p>(4)、<strong>布尔型</strong> <a class="link"   target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=boolean&spm=1001.2101.3001.7020" >boolean<i class="fas fa-external-link-alt"></i></a>[1]，存放true、false</p>
+<p><strong>引用类型</strong><br>(1)、<strong>类</strong> class<br>(2)、<strong>接口</strong> interface<br>(3)、<strong>数组</strong> [ ]</p>
+</li>
+<li><p>(1), 基本数据类型 : 被创建时 , 在栈内存中会被划分出一定的内存 , 并将数值存储在该内存中 .</p>
+<p>(2), 引用数据类型 : 被创建时 , 首先会在栈内存中分配一块空间 , 然后在堆内存中也会分配一块具体的空间用来</p>
+<p>存储数据的具体信息 , 即 hash 值 , 然后由栈中引用指向堆中的对象地址 .</p>
+</li>
+<li><p>在Java中，整数型字面量默认是int类型。小容量会自动转换成大容量类型，这称作自动类型转换。<strong>byte&lt;short(char)&lt;int&lt;long&lt;float&lt;double</strong></p>
+</li>
+<li><p>强制类型转换就是把多余的字节给直接砍掉。例如：byte b &#x3D; （byte）300; &#x2F;&#x2F;b&#x3D;44</p>
+<p>300这个int类型对应的二进制：00000000 00000000 00000001 00101100</p>
+<p>byte占用一个字节，砍掉前三个字节，结果是00101100  (44)</p>
+</li>
+<li><p>当整数型字面量没有超过变量的取值范围，可以直接赋值。例如：byte b&#x3D;1；</p>
+</li>
+<li><p>byte,short,char做混合运算的时候，各自先转换成int型在做运算。例如：int a&#x3D;1；short x &#x3D; a;会报错，因为编译器只知道a是int类型，不知道他的值是多少。</p>
+</li>
+<li><p>多种数据类型做混合运算的时候，最终的类型是“最大容量”对应的类型；byte，short，char混合运算除外。</p>
+</li>
+<li><p>任意一个浮点型都比整数型空间大，例如：floa容量&gt;long容量。</p>
+</li>
+<li><p>逻辑运算符两边都必须是布尔类型。</p>
+</li>
+<li><p>&amp;&amp;和&amp;的区别？</p>
+<p>&amp;&amp;短路与，若第一个条件为false，后面的条件直接跳过，结果为false<br>&amp;逻辑与，若第一个条件为false，后面的条件会执行，结果为false</p>
+</li>
+<li><p>使用扩展赋值运算符的时候，永远都不会改变运算结果类型。</p>
+<p>x+&#x3D;1和x&#x3D;x+1本质上有不同：</p>
+<p>x+&#x3D;1是自增一，x的数据类型不会发生改变。所有他等同于x &#x3D; (byte)(x+1)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">byte x = 10；</span><br><span class="line">x = x+1；//会报错，因为编译器只知道x+1是int类型，不知道他的具体数值，所以int类型不能直接赋值给byte类型的变量。</span><br></pre></td></tr></table></figure>
 
+</li>
+<li><p>当+运算符两边任意一边是字符串类型的时候，那么这个+会进行字符串拼接操作</p>
+</li>
+<li><p>if语句只会执行一个分支</p>
+</li>
+<li><p>switch语句只支持int和是String类型，case语句可以合并。例如：case 1：case 2：</p>
+</li>
+</ol>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><ol>
+<li>数组创建后没有赋值，会有默认值。</li>
+</ol>
+<p>int，short，byte，long是0；float，double是0.0；char是\u0000；boolean是false，String是null。</p>
+<ol start="2">
+<li>基本数据类型赋值是值传递。</li>
+</ol>
+<p>数组在默认情况下是引用传递，赋的值默认是地址。所以把一个数组赋给另一个数组，改变任意一个数组的内容，两个都会改变。</p>
+<ol start="3">
+<li><p>二维数组的每个元素都是一个一维数组。</p>
+</li>
+<li><p>二维数组列数可以不确定。</p>
+</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int arr[][] = new int[3][];//这个时候只是确定了一维数组的个数，但一维数组的地址都是null，就是每个一维数组都还没有开数据空间。</span><br><span class="line">arr[1] = new int[3];//然后可以这样给二维数组中的一维数组创建空间</span><br><span class="line">//在二维数组中，arr[]相当于一维数组空间的名字。而一维数组中，数据空间的名字是arr。</span><br></pre></td></tr></table></figure>
 
-
-<p>[<img  
+<h2 id="类与对象"><a href="#类与对象" class="headerlink" title="类与对象"></a>类与对象</h2><ol>
+<li><p>java内存的结构分析</p>
+<p>栈：一般存放基本数据类型和局部变量</p>
+<p>堆：存放对象和数组等，堆内存需要用关键字new才可以开辟。</p>
+<p>方法区：常量池（常量，比如字符串），类加载信息</p>
+<p><img  
                      lazyload
                      alt="image"
-                     data-src="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31%2017.46.06.png"
-                      alt="截屏2022-03-31 17.46.06"
-                >](<a class="link"   target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31" >https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/截屏2022-03-31<i class="fas fa-external-link-alt"></i></a> 17.46.06.png)</p>
-<h2 id="Soall平台："><a href="#Soall平台：" class="headerlink" title="Soall平台："></a>Soall平台：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://soall.org/</span><br></pre></td></tr></table></figure>
+                     data-src="https://cdn.staticaly.com/gh/IdealYth/picx@main/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/java%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D.37f73sy1rcq0.webp"
+                      alt="java内存分配"
+                ></p>
+</li>
+<li><p>对象（属性，行为）</p>
+</li>
+<li><p>类就是数据类型，对象就是一个具体的实例。</p>
+</li>
+<li><p>属性的定于语法通变量：访问修饰符 属性类型 属性名；有四种访问修饰符public proctected 默认类型 private。</p>
+</li>
+<li><p>属性如果不赋值，则默认值和数组的规则一致。</p>
+</li>
+</ol>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[修饰符列表] 返回值类型 方法名(形式参数列表)&#123;</span><br><span class="line">	方法体;</span><br><span class="line">&#125;//修饰符列表不是必选的</span><br></pre></td></tr></table></figure>
 
-
-
-<p>[<img  
-                     lazyload
-                     alt="image"
-                     data-src="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31%2017.47.22.png"
-                      alt="截屏2022-03-31 17.47.22"
-                >](<a class="link"   target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31" >https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/截屏2022-03-31<i class="fas fa-external-link-alt"></i></a> 17.47.22.png)</p>
-<h2 id="Shodan平台："><a href="#Shodan平台：" class="headerlink" title="Shodan平台："></a>Shodan平台：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.shodan.io/</span><br></pre></td></tr></table></figure>
-
-
-
-<p>[<img  
-                     lazyload
-                     alt="image"
-                     data-src="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31%2017.48.13.png"
-                      alt="截屏2022-03-31 17.48.13"
-                >](<a class="link"   target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31" >https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/截屏2022-03-31<i class="fas fa-external-link-alt"></i></a> 17.48.13.png)</p>
-<h2 id="Censys平台："><a href="#Censys平台：" class="headerlink" title="Censys平台："></a>Censys平台：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://search.censys.io/</span><br></pre></td></tr></table></figure>
-
-
-
-<p>[<img  
-                     lazyload
-                     alt="image"
-                     data-src="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31%2017.48.53.png"
-                      alt="截屏2022-03-31 17.48.53"
-                >](<a class="link"   target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31" >https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/截屏2022-03-31<i class="fas fa-external-link-alt"></i></a> 17.48.53.png)</p>
-<h2 id="钟馗之眼："><a href="#钟馗之眼：" class="headerlink" title="钟馗之眼："></a>钟馗之眼：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.zoomeye.org/</span><br></pre></td></tr></table></figure>
-
-
-
-<p>[<img  
-                     lazyload
-                     alt="image"
-                     data-src="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31%2017.49.41.png"
-                      alt="截屏2022-03-31 17.49.41"
-                >](<a class="link"   target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31" >https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/截屏2022-03-31<i class="fas fa-external-link-alt"></i></a> 17.49.41.png)</p>
-<h2 id="onyphe平台："><a href="#onyphe平台：" class="headerlink" title="onyphe平台："></a>onyphe平台：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://onyphe.io/</span><br></pre></td></tr></table></figure>
-
-
-
-<p>[<img  
-                     lazyload
-                     alt="image"
-                     data-src="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31%2017.50.20.png"
-                      alt="img"
-                >](<a class="link"   target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31" >https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/截屏2022-03-31<i class="fas fa-external-link-alt"></i></a> 17.50.20.png)</p>
-<h2 id="FOFA平台："><a href="#FOFA平台：" class="headerlink" title="FOFA平台："></a>FOFA平台：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://fofa.info/</span><br></pre></td></tr></table></figure>
-
-
-
-<p>[<img  
-                     lazyload
-                     alt="image"
-                     data-src="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31%2017.51.00.png"
-                      alt="截屏2022-03-31 17.51.00"
-                >](<a class="link"   target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31" >https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/截屏2022-03-31<i class="fas fa-external-link-alt"></i></a> 17.51.00.png)截屏2022-03-31 17.51.00</p>
-<h2 id="Fullhunt平台"><a href="#Fullhunt平台" class="headerlink" title="Fullhunt平台:"></a>Fullhunt平台:</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://fullhunt.io/</span><br></pre></td></tr></table></figure>
-
-
-
-<p>[<img  
-                     lazyload
-                     alt="image"
-                     data-src="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31%2017.53.09.png"
-                      alt="截屏2022-03-31 17.53.09"
-                >](<a class="link"   target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/%E6%88%AA%E5%B1%8F2022-03-31" >https://cdn.jsdelivr.net/gh/Tengshe2021/Missererr@main/uPic/截屏2022-03-31<i class="fas fa-external-link-alt"></i></a> 17.53.09.png)</p>
+<p>如果返回值类型不是void，那么方法体结束的时候必须使用return语句返回值。只要有return关键字的语句执行，当前方法必然结束。。</p>
 
         </div>
 
@@ -359,11 +371,11 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul class="copyright-info-content">
-        <li>本文标题：网络空间搜索引擎</li>
+        <li>本文标题：Java学习笔记</li>
         <li>本文作者：Keep Team</li>
-        <li>创建时间：2022-04-14 21:00:07</li>
+        <li>创建时间：2022-10-15 18:53:45</li>
         <li>
-            本文链接：https://idealyth.github.io/posts/2473274679.html
+            本文链接：https://idealyth.github.io/posts/2072697129.html
         </li>
         <li>
             版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -378,11 +390,7 @@
             <ul class="post-tags-box">
                 
                     <li class="tag-item">
-                        <a href="/tags/web%E5%AE%89%E5%85%A8/">#web安全</a>&nbsp;
-                    </li>
-                
-                    <li class="tag-item">
-                        <a href="/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/">#搜索引擎</a>&nbsp;
+                        <a href="/tags/Java/">#Java</a>&nbsp;
                     </li>
                 
             </ul>
@@ -391,29 +399,14 @@
         
             <div class="article-nav">
                 
-                    <div class="article-prev">
-                        <a class="prev"
-                           rel="prev"
-                           href="/posts/2072697129.html"
-                        >
-                            <span class="left arrow-icon flex-center">
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">Java学习笔记</span>
-                                <span class="post-nav-item">上一篇</span>
-                            </span>
-                        </a>
-                    </div>
-                
                 
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/posts/1718314811.html"
+                           href="/posts/2473274679.html"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">dvwa中的sql盲注学习</span>
+                                <span class="post-nav-title-item">网络空间搜索引擎</span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                             <span class="right arrow-icon flex-center">
@@ -629,7 +622,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%B9%B0%E5%9B%BE%E5%B9%B3%E5%8F%B0%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">鹰图平台：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Soall%E5%B9%B3%E5%8F%B0%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">Soall平台：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Shodan%E5%B9%B3%E5%8F%B0%EF%BC%9A"><span class="nav-number">3.</span> <span class="nav-text">Shodan平台：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Censys%E5%B9%B3%E5%8F%B0%EF%BC%9A"><span class="nav-number">4.</span> <span class="nav-text">Censys平台：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%92%9F%E9%A6%97%E4%B9%8B%E7%9C%BC%EF%BC%9A"><span class="nav-number">5.</span> <span class="nav-text">钟馗之眼：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#onyphe%E5%B9%B3%E5%8F%B0%EF%BC%9A"><span class="nav-number">6.</span> <span class="nav-text">onyphe平台：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FOFA%E5%B9%B3%E5%8F%B0%EF%BC%9A"><span class="nav-number">7.</span> <span class="nav-text">FOFA平台：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fullhunt%E5%B9%B3%E5%8F%B0"><span class="nav-number">8.</span> <span class="nav-text">Fullhunt平台:</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">基本语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E7%BB%84"><span class="nav-number">2.</span> <span class="nav-text">数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1"><span class="nav-number">3.</span> <span class="nav-text">类与对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E6%B3%95"><span class="nav-number">3.1.</span> <span class="nav-text">方法</span></a></li></ol></li></ol>
     </div>
 </div>
         </aside>
