@@ -9,6 +9,8 @@
     
     <title>
         
+            给博客添加一个首页小记 |
+        
         IdealYouth&#39;s Blog
     </title>
     
@@ -53,7 +55,7 @@
     
 
     <!-- page content -->
-    <div class="page-main-content border-box is-home">
+    <div class="page-main-content border-box">
         <div class="page-main-content-top">
             
 <header class="header-wrapper">
@@ -75,7 +77,7 @@
                 <ul class="menu-list border-box">
                     
                         
-                        <li class="menu-item flex-start border-box active">
+                        <li class="menu-item flex-start border-box">
                             <a class="menu-text-color border-box" href="/blog/">
                                 
                                     <i class="menu-text-color menu-icon fa-solid fa-home"></i>
@@ -168,7 +170,7 @@
         <ul class="drawer-menu-list border-box">
             
                 
-                <li class="drawer-menu-item border-box not-sub-menu active">
+                <li class="drawer-menu-item border-box not-sub-menu">
                     <label class="drawer-menu-label border-box">
                         <a class="drawer-menu-text-color left-side flex-start border-box" href="/blog/">
                             
@@ -278,666 +280,359 @@
             <div class="main-content border-box">
                 
 
-                    <div class="home-content-container fade-in-down-animation">
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        给博客添加一个首页小记
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/blog/images/head.jpg">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">理想青年</span>
+                                
+                                    <span class="author-badge">Two</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-pen-to-square"></i>&nbsp;
+                <span class="datetime">2022-10-17 17:02:17</span>
+            </span>
+
+            <span class="meta-info-item post-update-date">
+                <i class="icon fa-solid fa-arrows-rotate"></i>&nbsp;
+                <span class="datetime" data-updated="Tue Mar 19 2024 17:12:57 GMT+0800">2024-03-19 17:12:57</span>
+            </span>
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/blog/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/blog/tags/hexo/">hexo</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/blog/tags/%E7%BE%8E%E5%8C%96/">美化</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/blog/tags/%E7%BD%91%E7%AB%99/">网站</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+            <span class="meta-info-item post-wordcount">
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>725 字</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-min2read">
+                <i class="icon fas fa-clock"></i>&nbsp;<span>2 分钟</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
     
-        <div class="website-announcement border-box">
-            <i class="icon left fa-solid fa-bullhorn"></i>
-            <div class="announcement border-box text-ellipsis">
-                <p>啦啦啦啦啦啦啦~</p>
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>因为在网上看到一个好看的首页源码，所以心血来潮给自己博客也搞一个首页。因为没有学习过git命令和nodejs，所以这中间坑可没少经历。</p>
+<h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>首先新建一个github仓库，名字叫blog。</p>
+<p>在hexo根目录下的配置文件_config.yml，对url和root进行修改。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line">url: https://idealyth.github.io/blog</span><br><span class="line">root: /blog/</span><br></pre></td></tr></table></figure>
+
+<p>然后再把repository修改为blog仓库的地址。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:IdealYth/blog.git</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+
+<p>然后重新把博客部署到blog仓库</p>
+<p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
+<p>然后进入blog仓库，选择settings-pages，把分支选为main。</p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://github.com/IdealYth/picx-images-hosting/raw/master/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AA%E9%A6%96%E9%A1%B5/github-page%E9%85%8D%E7%BD%AE%E5%9B%BE.1ux4v7nd5qf4.webp"
+                        alt="github-page配置图"
+                 ></p>
+<p>然后把主域名仓库里的文件进行删除。这边因为没学过git命令。不会删除github仓库的文件，虽然在网上也搜索了一下方法，试了试，后来觉得太麻烦，就直接把仓库删除了，重新建了一个仓库。</p>
+<h2 id="配置首页"><a href="#配置首页" class="headerlink" title="配置首页"></a>配置首页</h2><p>然后下载首页的代码进行配置，执行下列命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/Tomotoes/HomePage.git</span><br><span class="line">cd HomePage</span><br><span class="line">npm install</span><br><span class="line">npm run dev</span><br></pre></td></tr></table></figure>
+
+<p>执行第三条命令的时候总是报错</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm ERR! code 1</span><br><span class="line">npm ERR! path D:\www\wegrow\node_modules\node-sass</span><br><span class="line">npm ERR! command failed</span><br><span class="line">...........</span><br></pre></td></tr></table></figure>
+
+<p>百度搜索了一下，应该是因为node版本太新，而安装的node-pass版本太老，网上给出的方法是把node版本降级，我觉得这样不太好，而且感觉很麻烦。</p>
+<p>后来决定先安装package.json文件中的其余依赖项部分，把  “node-sass”: “^4.12.0”和”gulp-sass”: “^4.0.2”这两个包提取出来单独安装最新版。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm i//其余的依赖部分</span><br><span class="line">npm install  --save  node-sass@7.0.3</span><br><span class="line">npm install  --save  gulp-sass@5.1.0</span><br></pre></td></tr></table></figure>
+
+<p>然后运行npm run dev命令的时候，又出现了报错</p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://github.com/IdealYth/picx-images-hosting/raw/master/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AA%E9%A6%96%E9%A1%B5/%E6%8A%A5%E9%94%99%E5%9B%BE.4x1anmcy1no0.webp"
+                        alt="报错图"
+                 ></p>
+<p>然后继续百度，原因是：新版本改了引入写法，同时新版本gulp sass不再自带默认的sass编译器，需要自己安装。</p>
+<p>所以首先修改引入方法，对首页文件夹下的gulpfile.js进行修改</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">将</span><br><span class="line">const sass = require(&#x27;gulp-sass&#x27;)</span><br><span class="line">改为</span><br><span class="line">const sass = require(&#x27;gulp-sass&#x27;)(require(&#x27;sass&#x27;))</span><br></pre></td></tr></table></figure>
+
+<p>然后安装sass依赖包。</p>
+<p><code>npm i sass -D</code></p>
+<h2 id="修改首页内容"><a href="#修改首页内容" class="headerlink" title="修改首页内容"></a>修改首页内容</h2><p>打开首页文件夹下的config.json文件，对里面的相关内容进行修改，同时把头像和图标进行替换。</p>
+<h2 id="项目部署"><a href="#项目部署" class="headerlink" title="项目部署"></a>项目部署</h2><p>在根目录下执行<code>npm run build</code> 后，会将项目文件生成到 <code>dist</code> 目录。</p>
+<p>然后执行如下命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cd dist</span><br><span class="line">git init </span><br><span class="line">git add -A</span><br><span class="line">git commit -am&quot;init&quot;</span><br><span class="line">git remote add origin https://github.com/你的用户名/你的用户名.github.io.git</span><br><span class="line">git push -f origin main</span><br></pre></td></tr></table></figure>
+
+<p>然后在github上设置好首页仓库的GithubPage选项。</p>
+<p>然后访问     <a href="https://idealyth.github.io/">https://idealyth.github.io</a>    就可以看到首页了。</p>
+<p>博客链接：<a href="https://idealyth.github.io/blog">https://idealyth.github.io/blog</a></p>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/blog/tags/hexo/">hexo</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/blog/tags/%E7%BE%8E%E5%8C%96/">美化</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/blog/tags/%E7%BD%91%E7%AB%99/">网站</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                            <div class="post-share-container border-box">
+    <ul class="share-list-wrap border-box">
+        <li class="qq share-item border-box flex-center tooltip"
+            data-tooltip-content="分享到 QQ"
+        >
+            <i class="fa-brands fa-qq"></i>
+        </li>
+        <li class="wechat share-item border-box flex-center tooltip tooltip-img"
+            data-tooltip-content="分享到微信"
+            data-tooltip-img-tip="微信扫一扫"
+            data-tooltip-img-style="background-color: #fff; top: -10px; padding: 0.6rem 0.6rem 0.1rem 0.6rem;"
+        >
+            <i class="fa-brands fa-weixin"></i>
+        </li>
+        <li class="weibo share-item border-box flex-center tooltip"
+            data-tooltip-content="分享到微博"
+        >
+            <i class="fa-brands fa-weibo"></i>
+        </li>
+    </ul>
+</div>
+
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/blog/posts/d87f7e0c.html"
+                                   title="test"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">test</span>
+                                        <span class="post-nav-item">上一篇</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/blog/posts/2072697129.html"
+                                   title="Java学习笔记"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">Java学习笔记</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;评论
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">评论插件加载失败</span>
+    <button class="reload keep-button">点击重新加载</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">正在加载评论插件</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="valine-container">
+        <div id="vcomments"></div>
+        <script data-pjax
+                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        ></script>
+        <script data-pjax
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          window.KeepCommentPlugin.initValine = () => {
+            const config = {
+              el: '#vcomments',
+              appId: '562faema307N5X8bof7RojiO-gzGzoHsz',
+              appKey: 'EVBP1qXHDIxVo8hgiMchygVm',
+              meta: ['nick', 'mail', 'link'],
+              avatar: 'wavatar',
+              enableQQ: true,
+              placeholder: '啦啦啦啦啦啦啦~',
+              lang: 'zh-CN'.toLowerCase()
+            }
+
+            if ('') {
+              config.serverURLs = ''
+            }
+
+            if (window?.Valine) {
+              new Valine(config)
+              window.KeepCommentPlugin.hideLoading()
+            } else {
+              setTimeout(() => {
+                window.KeepCommentPlugin.initValine()
+              }, 1000)
+            }
+          }
+
+          if ('true' === 'true') {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initValine()
+            }, 1200)
+          } else {
+            window.addEventListener('DOMContentLoaded', window.KeepCommentPlugin.initValine)
+          }
+        </script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93"><span class="nav-text">创建仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E9%A6%96%E9%A1%B5"><span class="nav-text">配置首页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E9%A6%96%E9%A1%B5%E5%86%85%E5%AE%B9"><span class="nav-text">修改首页内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2"><span class="nav-text">项目部署</span></a></li></ol>
+    </div>
+</div>
 
             </div>
-            <i class="icon right close fa-solid fa-close"></i>
-        </div>
-    
-    <ul class="home-post-list border-box">
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/blog/posts/d87f7e0c.html">
-                            test
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                             1231231231231231231
-
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Mon Mar 25 2024 21:10:19 GMT+0800"
-                >2024-03-25 21:10:19</span>
-            </span>
-        
-
-        
-
-        
-
-        
-
-        
-        
-        
         
     </div>
-
-    
-        <a class="home-read-more" href="/blog/posts/d87f7e0c.html">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/blog/posts/1183994362.html">
-                            给博客添加一个首页小记
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            前言因为在网上看到一个好看的首页源码，所以心血来潮给自己博客也搞一个首页。因为没有学习过git命令和nodejs，所以这中间坑可没少经历。
-创建仓库首先新建一个github仓库，名字叫blog。
-在hexo根目录下的配置文件_config.yml，对...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Tue Mar 19 2024 17:12:57 GMT+0800"
-                >2024-03-19 17:12:57</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/blog/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/blog/posts/1183994362.html">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/blog/posts/2072697129.html">
-                            Java学习笔记
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            基本语法
-首先ava源代码文件会通过编译会生成后缀为.class的字节码文件，然后java命令会先运行jvm虚拟机，然后JVM会去运行类加载器，默认从当前路径下寻找指定名字的class类文件，然后类加载器会将该文件装载到虚拟机，然后虚拟机启动解释器将...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Tue Mar 19 2024 13:45:03 GMT+0800"
-                >2024-03-19 13:45:03</span>
-            </span>
-        
-
-        
-
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/blog/posts/2072697129.html">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/blog/posts/2473274679.html">
-                            网络空间搜索引擎
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            文章转载自:APT-C-61团队
-鹰图平台：1https://hunter.qianxin.com/
-
-
-
-
-Soall平台：1https://soall.org/
-
-
-
-
-Shodan平台：1https://www.shodan.io/
-
-
-
-
-C...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Tue Mar 19 2024 13:46:07 GMT+0800"
-                >2024-03-19 13:46:07</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/blog/categories/web%E5%AE%89%E5%85%A8/">web安全</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/blog/posts/2473274679.html">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/blog/posts/1718314811.html">
-                            dvwa中的sql盲注学习
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            刚开始也没有思路，不知道怎么测试注入点，然后就是看到一位表哥的文章，这才理解。这里贴出来文章地址DVWA靶场通关—-(8) SQL Injection(Blind)教程 
-1.low123451.先输入1，页面返回正常。2.输入&quot; 1\ &...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Tue Mar 19 2024 13:44:49 GMT+0800"
-                >2024-03-19 13:44:49</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/blog/categories/web%E5%AE%89%E5%85%A8%E5%AD%A6%E4%B9%A0/">web安全学习</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/blog/posts/1718314811.html">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/blog/posts/2481670560.html">
-                            docker的简单使用
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            Docker的简单使用123456789101112131415161718192021222324252627282930313233343536#笔者以拉取 CVE-2017-7504 的漏洞环境为例。docker search testjbos...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Tue Mar 19 2024 13:44:41 GMT+0800"
-                >2024-03-19 13:44:41</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/blog/categories/docker/">docker</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/blog/posts/2481670560.html">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/blog/posts/554823524.html">
-                            windows下python2和python3共存方法
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            第一种改名法：
-将python2和3安装到不同路径，因为环境变量只能添加一个版本，所以另一个版本的环境变量需要手动添加
-
-把两个安装目录下的python.exe分别改成python2.exe,python3.exe
-
-pip版本共存：分别执行下面的语...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Tue Mar 19 2024 13:45:52 GMT+0800"
-                >2024-03-19 13:45:52</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/blog/categories/python/">python</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/blog/posts/554823524.html">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/blog/posts/4220737426.html">
-                            Kali下安装docker和docker-compose
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            因为一直文件下载失败，所以直接在github上下载下来，在移到虚拟机里。
-github地址：
-1https://github.com/docker/compose/releases
-
-然后执行命令
-123sudo DOCKER_CONFIG=$&#1...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Tue Mar 19 2024 13:45:12 GMT+0800"
-                >2024-03-19 13:45:12</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/blog/categories/kali/">kali</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/blog/posts/4220737426.html">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/blog/posts/225088152.html">
-                            hexo-keep主题美化
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            1.添加卡通人物进入该项目地址点击此处
-在博客根目录下输入命令：
-1npm install --save hexo-helper-live2d
-
-然后下载你喜欢的模型，将 packagename 更换成模型名称，模型选择请点击此处，各个模型的预览请查...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Tue Mar 19 2024 13:44:57 GMT+0800"
-                >2024-03-19 13:44:57</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/blog/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/blog/posts/225088152.html">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/blog/posts/2301763326.html">
-                            web安全一些名词解释
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            CMS：是模板式的网站开发工具，直接套用模板开发网站，肯定包括后台管理系统，一套cms后台管理都挺类似的
-后台管理系统：可能是用某种语言写出来的一个管理网站的系统
-转载自百度知道的一个解释：但凡CMS，一定是有一套资深的网站后台管理系统的，功能强大的...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Tue Mar 19 2024 13:45:29 GMT+0800"
-                >2024-03-19 13:45:29</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/blog/categories/web%E5%AE%89%E5%85%A8%E5%AD%A6%E4%B9%A0/">web安全学习</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/blog/posts/2301763326.html">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-    </ul>
-    
-    <div class="paginator border-box flex-center">
-        <div class="border-box first-page paginator-btn not-allow">
-            <a class="border-box"><i class="fa-solid fa-angle-double-left"></i></a>
-        </div>
-
-        <div class="border-box paginator-btn">
-            <a class="border-box"
-               href="/blog/"
-            ><i class="fa-solid fa-chevron-left"></i></a>
-        </div>
-
-
-        <div class="page-number-box border-box flex-center">
-            <input class="page-number-input border-box base-style"
-                   type="number"
-                   value="1"
-                   min="1"
-                   max="2"
-            /><span class="delimiter base-style">/</span><span class="base-style">2</span>
-        </div>
-
-
-        <div class="border-box paginator-btn allowed">
-            <a class="border-box"
-               href="/blog/page/2/"
-            ><i class="fa-solid fa-chevron-right"></i></a>
-        </div>
-
-        <div class="border-box last-page paginator-btn allowed">
-            <a class="border-box"><i class="fa-solid fa-angle-double-right"></i></a>
-        </div>
-    </div>
-
-
-
-
 </div>
 
 
@@ -971,10 +666,40 @@ github地址：
 
     <!-- post tools -->
     
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
 
     <!-- side tools -->
     <div class="side-tools">
-        <div class="side-tools-container border-box side-tools-show-handle">
+        <div class="side-tools-container border-box ">
     <ul class="side-tools-list side-tools-show-handle border-box">
         <li class="tools-item tool-font-adjust-plus flex-center">
             <i class="fas fa-search-plus"></i>
@@ -1011,7 +736,15 @@ github地址：
 
     <ul class="exposed-tools-list border-box">
         
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
 
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
         
 
         <li class="tools-item tool-toggle-show flex-center">
@@ -1067,8 +800,18 @@ github地址：
 
     <!-- tablet toc -->
     
-</main>
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93"><span class="nav-text">创建仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E9%A6%96%E9%A1%B5"><span class="nav-text">配置首页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E9%A6%96%E9%A1%B5%E5%86%85%E5%AE%B9"><span class="nav-text">修改首页内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2"><span class="nav-text">项目部署</span></a></li></ol>
+    </div>
+</div>
 
+            </div>
+        </div>
+    
+</main>
 
 
 
@@ -1090,10 +833,24 @@ github地址：
 <div class="pjax">
     <!-- home page -->
     
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.2/js/page/home-page.min.js"></script>
-    
 
     <!-- post page -->
+    
+        <!-- post-helper -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.2/js/post/post-helper.min.js"></script>
+
+        <!-- toc -->
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.2/js/post/toc.min.js"></script>
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.2/js/post/share.min.js"></script>
+        
     
 
     <!-- categories page -->

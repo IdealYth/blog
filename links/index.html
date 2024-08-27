@@ -9,7 +9,7 @@
     
     <title>
         
-            404 |
+            友链 |
         
         IdealYouth&#39;s Blog
     </title>
@@ -125,7 +125,7 @@
                         </li>
                     
                         
-                        <li class="menu-item flex-start border-box">
+                        <li class="menu-item flex-start border-box active">
                             <a class="menu-text-color border-box" href="/blog/links">
                                 
                                     <i class="menu-text-color menu-icon fa-solid fa-link"></i>
@@ -234,7 +234,7 @@
                 </li>
             
                 
-                <li class="drawer-menu-item border-box not-sub-menu">
+                <li class="drawer-menu-item border-box not-sub-menu active">
                     <label class="drawer-menu-label border-box">
                         <a class="drawer-menu-text-color left-side flex-start border-box" href="/blog/links">
                             
@@ -280,14 +280,121 @@
             <div class="main-content border-box">
                 
 
-                    <div class="fade-in-down-animation">
-    <div class="error-404-container border-box">
-        <div class="text-1 border-box flex-center">404</div>
-        <div class="text-2 border-box flex-center">
-            页面找不到
+                    
+
+<div class="fade-in-down-animation">
+    <div class="page-template-container border-box keep-container ">
+        <!-- page top -->
+        
+
+        <!-- page bottom -->
+        <div class="page-template-bottom border-box">
+            <!-- use page template -->
+            
+
+            <!-- page content -->
+            <div class="page-content border-box keep-markdown-body ">
+                
+                    <p><strong>若要交换友链，请先将本站链接添加到你的网站，然后按下列&lt;&lt;格式&gt;&gt;留言</strong>。</p>
+<p><strong>信息依次为：名称、链接、描述、头像。</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">name: 理想青年</span><br><span class="line">link: https://idealyth.github.io/</span><br><span class="line">description: 心有猛虎，细嗅蔷薇。</span><br><span class="line">avatar: https://pic.netbian.com/uploads/allimg/220322/232437-16479626777bb2.jpg</span><br></pre></td></tr></table></figure>
+
+
+                
+            </div>
+
+            <!-- comment plugin -->
+            
+                
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;评论
         </div>
-        <div class="text-3 border-box flex-center">
-            <a class="go-home" href="/blog/">前往首页</a>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">评论插件加载失败</span>
+    <button class="reload keep-button">点击重新加载</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">正在加载评论插件</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="valine-container">
+        <div id="vcomments"></div>
+        <script data-pjax
+                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        ></script>
+        <script data-pjax
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          window.KeepCommentPlugin.initValine = () => {
+            const config = {
+              el: '#vcomments',
+              appId: '562faema307N5X8bof7RojiO-gzGzoHsz',
+              appKey: 'EVBP1qXHDIxVo8hgiMchygVm',
+              meta: ['nick', 'mail', 'link'],
+              avatar: 'wavatar',
+              enableQQ: true,
+              placeholder: '啦啦啦啦啦啦啦~',
+              lang: 'zh-CN'.toLowerCase()
+            }
+
+            if ('') {
+              config.serverURLs = ''
+            }
+
+            if (window?.Valine) {
+              new Valine(config)
+              window.KeepCommentPlugin.hideLoading()
+            } else {
+              setTimeout(() => {
+                window.KeepCommentPlugin.initValine()
+              }, 1000)
+            }
+          }
+
+          if ('true' === 'true') {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initValine()
+            }, 1200)
+          } else {
+            window.addEventListener('DOMContentLoaded', window.KeepCommentPlugin.initValine)
+          }
+        </script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+            
         </div>
     </div>
 </div>
