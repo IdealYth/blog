@@ -332,7 +332,7 @@
 
             <span class="meta-info-item post-update-date">
                 <i class="icon fa-solid fa-arrows-rotate"></i>&nbsp;
-                <span class="datetime" data-updated="Tue Aug 27 2024 19:50:31 GMT+0800">2024-08-27 19:50:31</span>
+                <span class="datetime" data-updated="Fri Aug 30 2024 09:34:14 GMT+0800">2024-08-30 09:34:14</span>
             </span>
         
 
@@ -367,12 +367,12 @@
         
         
             <span class="meta-info-item post-wordcount">
-                <i class="icon fas fa-file-word"></i>&nbsp;<span>2.9k 字</span>
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>2.8k 字</span>
             </span>
         
         
             <span class="meta-info-item post-min2read">
-                <i class="icon fas fa-clock"></i>&nbsp;<span>16 分钟</span>
+                <i class="icon fas fa-clock"></i>&nbsp;<span>15 分钟</span>
             </span>
         
         
@@ -434,20 +434,13 @@
 <h2 id="3-keep主题下头像旋转"><a href="#3-keep主题下头像旋转" class="headerlink" title="3.keep主题下头像旋转"></a>3.keep主题下头像旋转</h2><p>在博客根目录下themes\keep\source\css\layout\post-content.styl文件内的.avatar内加入如下代码：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">transition: transform 1.0s ease-out;//img内加入</span><br><span class="line"></span><br><span class="line">img:hover &#123;</span><br><span class="line">    transform: rotateZ(360deg);</span><br><span class="line">&#125;</span><br><span class="line">.posts-expand .post-body img:hover &#123;</span><br><span class="line">    transform: initial;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="4-删除keep主题底部的XXX模板"><a href="#4-删除keep主题底部的XXX模板" class="headerlink" title="4.删除keep主题底部的XXX模板"></a>4.删除keep主题底部的XXX模板</h2><p>在博客根目录下themes\keep\layout\_partial\footer.ejs中删除如下代码：</p>
-<pre><code>        &lt;div class=&quot;theme-info info-item&quot;&gt;
-            &lt;%- __(&#39;powered_by&#39;, &#39;&lt;a target=&quot;_blank&quot; href=&quot;https://hexo.io&quot;&gt;Hexo&lt;/a&gt;&#39;) %&gt;&amp;nbsp;|&amp;nbsp;
-            &lt;%- __(&#39;theme&#39;) %&gt;&amp;nbsp;
-            &lt;a class=&quot;theme-version&quot; target=&quot;_blank&quot; href=&quot;https://github.com/XPoet/hexo-theme-keep&quot;&gt;Keep v&lt;%= theme.version %&gt;&lt;/a&gt;
-        &lt;/div&gt;
-</code></pre>
-<h2 id="5-设置博客文章持久化连接"><a href="#5-设置博客文章持久化连接" class="headerlink" title="5.设置博客文章持久化连接"></a>5.设置博客文章持久化连接</h2><p>安装 <code>hexo-abbrlink</code> 插件 。</p>
+<h2 id="4-设置博客文章持久化连接"><a href="#4-设置博客文章持久化连接" class="headerlink" title="4.设置博客文章持久化连接"></a>4.设置博客文章持久化连接</h2><p>安装 <code>hexo-abbrlink</code> 插件 。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
 
 <p>在博客根目录下的配置文件中添加如下代码：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># abbrlink config</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32      #support crc16(default) and crc32</span><br><span class="line">  rep: dec        #support dec(default) and hex</span><br><span class="line">  drafts: false   #(true)Process draft,(false)Do not process draft. false(default) </span><br><span class="line">  # Generate categories from directory-tree</span><br><span class="line">  # depth: the max_depth of directory-tree you want to generate, should &gt; 0</span><br><span class="line">  auto_category:</span><br><span class="line">     enable: true  #true(default)</span><br><span class="line">     depth:        #3(default)</span><br><span class="line">     over_write: false </span><br><span class="line">  auto_title: false #enable auto title, it can auto fill the title by path</span><br><span class="line">  auto_date: false #enable auto date, it can auto fill the date by time today</span><br><span class="line">  force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink. This only updates abbrlink rather than other front variables.</span><br></pre></td></tr></table></figure>
 
-<h2 id="6-设置鼠标指针样式"><a href="#6-设置鼠标指针样式" class="headerlink" title="6.设置鼠标指针样式"></a>6.设置鼠标指针样式</h2><p>在<code>Hexo\themes\keep\source\css</code>中，新建文件夹my，然后在文件夹中创建mouse.styl文件，粘贴以下代码。</p>
+<h2 id="5-设置鼠标指针样式"><a href="#5-设置鼠标指针样式" class="headerlink" title="5.设置鼠标指针样式"></a>5.设置鼠标指针样式</h2><p>在<code>Hexo\themes\keep\source\css</code>中，新建文件夹my，然后在文件夹中创建mouse.styl文件，粘贴以下代码。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">	cursor: url(https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071208706.cur), auto;</span><br><span class="line">&#125;</span><br><span class="line">a &#123;</span><br><span class="line">	cursor: url(https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071205091.cur), auto!important;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>然后打开<code>Hexo\themes\keep\source\css</code>中的style.styl文件，在里面添加引用<code>@import &quot;my/mouse.styl&quot;</code></p>
@@ -644,7 +637,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0"><span class="nav-text">更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%B7%BB%E5%8A%A0%E5%8D%A1%E9%80%9A%E4%BA%BA%E7%89%A9"><span class="nav-text">1.添加卡通人物</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Hexo%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E7%83%9F%E8%8A%B1%E7%88%86%E7%82%B8%E6%95%88%E6%9E%9C"><span class="nav-text">2.Hexo鼠标点击烟花爆炸效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-keep%E4%B8%BB%E9%A2%98%E4%B8%8B%E5%A4%B4%E5%83%8F%E6%97%8B%E8%BD%AC"><span class="nav-text">3.keep主题下头像旋转</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%88%A0%E9%99%A4keep%E4%B8%BB%E9%A2%98%E5%BA%95%E9%83%A8%E7%9A%84XXX%E6%A8%A1%E6%9D%BF"><span class="nav-text">4.删除keep主题底部的XXX模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E8%AE%BE%E7%BD%AE%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8C%81%E4%B9%85%E5%8C%96%E8%BF%9E%E6%8E%A5"><span class="nav-text">5.设置博客文章持久化连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E8%AE%BE%E7%BD%AE%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%E6%A0%B7%E5%BC%8F"><span class="nav-text">6.设置鼠标指针样式</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0"><span class="nav-text">更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%B7%BB%E5%8A%A0%E5%8D%A1%E9%80%9A%E4%BA%BA%E7%89%A9"><span class="nav-text">1.添加卡通人物</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Hexo%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E7%83%9F%E8%8A%B1%E7%88%86%E7%82%B8%E6%95%88%E6%9E%9C"><span class="nav-text">2.Hexo鼠标点击烟花爆炸效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-keep%E4%B8%BB%E9%A2%98%E4%B8%8B%E5%A4%B4%E5%83%8F%E6%97%8B%E8%BD%AC"><span class="nav-text">3.keep主题下头像旋转</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E8%AE%BE%E7%BD%AE%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8C%81%E4%B9%85%E5%8C%96%E8%BF%9E%E6%8E%A5"><span class="nav-text">4.设置博客文章持久化连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E8%AE%BE%E7%BD%AE%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%E6%A0%B7%E5%BC%8F"><span class="nav-text">5.设置鼠标指针样式</span></a></li></ol>
     </div>
 </div>
 
@@ -822,7 +815,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0"><span class="nav-text">更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%B7%BB%E5%8A%A0%E5%8D%A1%E9%80%9A%E4%BA%BA%E7%89%A9"><span class="nav-text">1.添加卡通人物</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Hexo%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E7%83%9F%E8%8A%B1%E7%88%86%E7%82%B8%E6%95%88%E6%9E%9C"><span class="nav-text">2.Hexo鼠标点击烟花爆炸效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-keep%E4%B8%BB%E9%A2%98%E4%B8%8B%E5%A4%B4%E5%83%8F%E6%97%8B%E8%BD%AC"><span class="nav-text">3.keep主题下头像旋转</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%88%A0%E9%99%A4keep%E4%B8%BB%E9%A2%98%E5%BA%95%E9%83%A8%E7%9A%84XXX%E6%A8%A1%E6%9D%BF"><span class="nav-text">4.删除keep主题底部的XXX模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E8%AE%BE%E7%BD%AE%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8C%81%E4%B9%85%E5%8C%96%E8%BF%9E%E6%8E%A5"><span class="nav-text">5.设置博客文章持久化连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E8%AE%BE%E7%BD%AE%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%E6%A0%B7%E5%BC%8F"><span class="nav-text">6.设置鼠标指针样式</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0"><span class="nav-text">更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%B7%BB%E5%8A%A0%E5%8D%A1%E9%80%9A%E4%BA%BA%E7%89%A9"><span class="nav-text">1.添加卡通人物</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Hexo%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E7%83%9F%E8%8A%B1%E7%88%86%E7%82%B8%E6%95%88%E6%9E%9C"><span class="nav-text">2.Hexo鼠标点击烟花爆炸效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-keep%E4%B8%BB%E9%A2%98%E4%B8%8B%E5%A4%B4%E5%83%8F%E6%97%8B%E8%BD%AC"><span class="nav-text">3.keep主题下头像旋转</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E8%AE%BE%E7%BD%AE%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8C%81%E4%B9%85%E5%8C%96%E8%BF%9E%E6%8E%A5"><span class="nav-text">4.设置博客文章持久化连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E8%AE%BE%E7%BD%AE%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%E6%A0%B7%E5%BC%8F"><span class="nav-text">5.设置鼠标指针样式</span></a></li></ol>
     </div>
 </div>
 
