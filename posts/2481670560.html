@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="理想青年的博客">
+    <meta name="author" content="理想青年">
+    
+    <title>
+        
+            docker的简单使用 |
+        
+        IdealYouth&#39;s Blog
+    </title>
+    
+<link rel="stylesheet" href="/blog/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/blog/images/head.jpg">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/font/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/font/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/font/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/font/css/brands.min.css">
+    
+        
+            
+                
+<link rel="stylesheet" href="/blog/css/custom-1.css">
+
+            
+        
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"idealyth.github.io","root":"/blog/","language":"zh-CN","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"IdealYouth's Blog","author":"理想青年","avatar":"/images/head.jpg","logo":"/images/head.jpg","favicon":"/images/head.jpg"},"menu":{"home":"/ || fa-solid fa-home","archives":"/archives || fa-solid fa-box-archive","tags":"/tags || fa-solid fa-tags","categories":"/categories || fa-solid fa-layer-group","links":"/links || fa-solid fa-link","about":"/about || fa-solid fa-user-graduate"},"first_screen":{"enable":false,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"Keep writing and Keep loving.","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":true,"percent":true,"hide_header":true},"home":{"announcement":"啦啦啦啦啦啦啦~","category":true,"tag":false,"post_datetime":"updated"},"post":{"author_badge":{"enable":true,"level_badge":false,"custom_badge":["下三品","中三品","二品","金刚","指玄","天象","陆地神仙"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":true,"reward":{"enable":false,"img_link":null,"text":"请作者喝咖啡","icon":null},"created_datetime_icon":"fa-solid fa-pen-to-square","updated_datetime_icon":"fa-solid fa-arrows-rotate"},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"obsidian"},"toc":{"enable":true,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":false,"site_pv":false,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"valine","valine":{"appid":"562faema307N5X8bof7RojiO-gzGzoHsz","appkey":"EVBP1qXHDIxVo8hgiMchygVm","server_urls":null,"placeholder":"啦啦啦啦啦啦啦~"},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.39"},"waline":{"server_url":null,"reaction":false,"version":"3.3.2"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":true},"lazyload":{"enable":true},"cdn":{"enable":true,"provider":"cdnjs"},"pjax":{"enable":true},"footer":{"since":2022,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":true,"css":["/css/custom-1.css"],"js":["/js/fireworks.js"]},"root":"/blog","source_data":{"links":[{"title":"Friend"},{"name":"AManYoo","link":"https://amanyoo.github.io/","description":"能坚持别人不能坚持的，才能拥有别人不能拥有的。","avatar":"https://amanyoo.github.io/img/aman5.webp"},{"name":"XPoet","link":"https://xpoet.cn/","description":"所有命运的馈赠，早已在暗中标好价格。","avatar":"https://cdn.jsdelivr.net/gh/XPoet/image-hosting@master/common-use/avatar.jpg"},{"name":"不知名艺术家","link":"https://jinzhanqi.com/","description":"love artist, love code.","avatar":"https://s3.ax1x.com/2020/11/17/DVvkB4.jpg"}]},"version":"4.2.5"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/blog/atom.xml" title="理想青年" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/blog/">
+                    <img src="/blog/images/head.jpg">
+                </a>
+            
+            <a class="site-name border-box" href="/blog/">
+               IdealYouth&#39;s Blog
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/blog/">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-home"></i>
+                                
+                                首页
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/blog/archives">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                
+                                归档
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/blog/tags">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-tags"></i>
+                                
+                                标签
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/blog/categories">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-layer-group"></i>
+                                
+                                分类
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/blog/links">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-link"></i>
+                                
+                                友链
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/blog/about">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                
+                                关于
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/blog/">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-home"></i>
+                                </span>
+                            
+                            首页
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/blog/archives">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                </span>
+                            
+                            归档
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/blog/tags">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-tags"></i>
+                                </span>
+                            
+                            标签
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/blog/categories">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-layer-group"></i>
+                                </span>
+                            
+                            分类
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/blog/links">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-link"></i>
+                                </span>
+                            
+                            友链
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/blog/about">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                </span>
+                            
+                            关于
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        docker的简单使用
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/blog/images/head.jpg">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">理想青年</span>
+                                
+                                    <span class="author-badge">中三品</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-pen-to-square"></i>&nbsp;
+                <span class="datetime">2022-04-08 11:11:22</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-arrows-rotate"></i>&nbsp;
+                    <span class="datetime" data-updated="Fri Jan 03 2025 05:44:08 GMT+0000">2025-01-03 05:44:08</span>
+                </span>
+            
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/blog/categories/docker/">docker</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/blog/tags/docker/">docker</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+            <span class="meta-info-item post-wordcount">
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>1.5k 字</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-min2read">
+                <i class="icon fas fa-clock"></i>&nbsp;<span>6 分钟</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h2 id="Docker的简单使用"><a href="#Docker的简单使用" class="headerlink" title="Docker的简单使用"></a>Docker的简单使用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#笔者以拉取 CVE-2017-7504 的漏洞环境为例。</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">docker search testjboss    							<span class="comment">#搜索漏洞环境</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">docker pull testjboss/jboss							<span class="comment">#拉取漏洞环境</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">docker run -d -p 80:8080 testjboss/jboss:latest		<span class="comment">#根据testjboss/jboss镜像创建并运行容器</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ifconfig		<span class="comment">#查看已运行容器ip</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#kali中，使用浏览器访问http://IP			#IP可为127.0.0.1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">docker ps		<span class="comment">#查看正在运行的容器</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">docker <span class="built_in">exec</span> -it e8f4844aabc1 /bin/bash		<span class="comment">#进入容器(id:e8f4844aabc1)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">exit</span>	<span class="comment">#退出容器到宿主机（容器不会停止运行）</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">docker stop 3b41c0c08430			<span class="comment">#关闭容器(id唯一标识，建议使用id)</span></span><br></pre></td></tr></table></figure>
+
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://img-blog.csdnimg.cn/img_convert/9176b9ec8f7d22bdf0f0e2838873ed88.png"
+                        alt="img"
+                 ></p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://img-blog.csdnimg.cn/img_convert/1f20269ee753e69960ee666220501912.png"
+                        alt="img"
+                 ></p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://img-blog.csdnimg.cn/img_convert/97991a327e8d80847607ef4c6db40ce4.png"
+                        alt="img"
+                 ></p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://img-blog.csdnimg.cn/img_convert/6c3d571ebf6c6a43c7a6a0b977007d8b.png"
+                        alt="img"
+                 ></p>
+<h2 id="Docker的常用命令"><a href="#Docker的常用命令" class="headerlink" title="Docker的常用命令"></a>Docker的常用命令</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">#系统命令</span><br><span class="line">systemctl start docker				#启动docker</span><br><span class="line">systemctl stop docker				#停止docker</span><br><span class="line">systemctl restart docker			#重启docker</span><br><span class="line">systemctl enable docker				#设置docker开机自启</span><br><span class="line"></span><br><span class="line">#基本命令</span><br><span class="line">docker version						#查看docker版本</span><br><span class="line">docker info							#查看docker详细信息</span><br><span class="line">docker --help						#查看docker命令</span><br><span class="line"></span><br><span class="line">#镜像命令</span><br><span class="line">docker images						#查看docker镜像列表</span><br><span class="line">docker images -a					#列出本地所有镜像</span><br><span class="line">docker images --digests				#显示镜像的摘要信息</span><br><span class="line">docker search redis					#从Docker Hub上查找redis镜像</span><br><span class="line">docker pull redis					#从Docker Hub上下载redis镜像</span><br><span class="line">docker rmi 373f0984b070				#删除IMAGE ID 为373f0984b070的镜像</span><br><span class="line"></span><br><span class="line">#运行命令</span><br><span class="line">#-p 6379:6379	端口映射：前表示主机部分,后表示容器部分</span><br><span class="line">#-d	在后台运行容器（不进入终端）并打印容器ID/容器名</span><br><span class="line">#--name myredis表示自定义容器名为myredis</span><br><span class="line">docker run -d -p 6379:6379 --name myredis redis:latest		#根据镜像创建并运行容器</span><br><span class="line"></span><br><span class="line">#容器命令</span><br><span class="line">docker container ls 或 docker ps				#查看正在运行的容器</span><br><span class="line">docker container ls -a 或 docker ps -a			#列出所有容器</span><br><span class="line">docker container start 容器ID 或 容器名称		#启动容器</span><br><span class="line">docker start 容器ID 或 容器名称					#启动容器</span><br><span class="line">docker container stop 容器ID 或 容器名称			#停止容器</span><br><span class="line">docker stop 容器ID 或 容器名称					#停止容器</span><br><span class="line">docker container rm 容器ID 或 容器名称			#删除容器</span><br><span class="line">docker rm 容器ID 或 容器名称						#删除容器</span><br><span class="line">docker container logs -f 容器ID 或 容器名称		#查看容器日志</span><br><span class="line">docker exec -it name /bin/bash 					#进入name（容器名/id）中开启交互式的终端，exit退出</span><br></pre></td></tr></table></figure>
+
+<h2 id="docker-–help中文译解"><a href="#docker-–help中文译解" class="headerlink" title="docker –help中文译解"></a>docker –help中文译解</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line">Usage:</span><br><span class="line">docker [OPTIONS] COMMAND [arg...]</span><br><span class="line">       docker daemon [ --help | ... ]</span><br><span class="line">       docker [ --help | -v | --version ]</span><br><span class="line">A</span><br><span class="line">self-sufficient runtime for containers.</span><br><span class="line"></span><br><span class="line">Options:</span><br><span class="line">  --config=~/.docker              Location of client config files  #客户端配置文件的位置</span><br><span class="line">  -D, --debug=false               Enable debug mode  #启用Debug调试模式</span><br><span class="line">  -H, --host=[]                   Daemon socket(s) to connect to  #守护进程的套接字（Socket）连接</span><br><span class="line">  -h, --help=false                Print usage  #打印使用</span><br><span class="line">  -l, --log-level=info            Set the logging level  #设置日志级别</span><br><span class="line">  --tls=false                     Use TLS; implied by--tlsverify  #</span><br><span class="line">  --tlscacert=~/.docker/ca.pem    Trust certs signed only by this CA  #信任证书签名CA</span><br><span class="line">  --tlscert=~/.docker/cert.pem    Path to TLS certificate file  #TLS证书文件路径</span><br><span class="line">  --tlskey=~/.docker/key.pem      Path to TLS key file  #TLS密钥文件路径</span><br><span class="line">  --tlsverify=false               Use TLS and verify the remote  #使用TLS验证远程</span><br><span class="line">  -v, --version=false             Print version information and quit  #打印版本信息并退出</span><br><span class="line"></span><br><span class="line">Commands:</span><br><span class="line">    attach    Attach to a running container  #当前shell下attach连接指定运行镜像</span><br><span class="line">    build     Build an image from a Dockerfile  #通过Dockerfile定制镜像</span><br><span class="line">    commit    Create a new image from a container&#x27;s changes  #提交当前容器为新的镜像</span><br><span class="line">    cp    	  Copy files/folders from a container to a HOSTDIR or to STDOUT  #从容器中拷贝指定文件或者目录到宿主机中</span><br><span class="line">    create    Create a new container  #创建一个新的容器，同run 但不启动容器</span><br><span class="line">    diff      Inspect changes on a container&#x27;s filesystem  #查看docker容器变化</span><br><span class="line">    events    Get real time events from the server#从docker服务获取容器实时事件</span><br><span class="line">    exec      Run a command in a running container#在已存在的容器上运行命令</span><br><span class="line">    export    Export a container&#x27;s filesystem as a tar archive  #导出容器的内容流作为一个tar归档文件(对应import)</span><br><span class="line">    history   Show the history of an image  #展示一个镜像形成历史</span><br><span class="line">    images    List images  #列出系统当前镜像</span><br><span class="line">    import    Import the contents from a tarball to create a filesystem image  #从tar包中的内容创建一个新的文件系统映像(对应export)</span><br><span class="line">    info      Display system-wide information  #显示系统相关信息</span><br><span class="line">    inspect   Return low-level information on a container or image  #查看容器详细信息</span><br><span class="line">    kill      Kill a running container  #kill指定docker容器</span><br><span class="line">    load      Load an image from a tar archive or STDIN  #从一个tar包中加载一个镜像(对应save)</span><br><span class="line">    login     Register or log in to a Docker registry#注册或者登陆一个docker源服务器</span><br><span class="line">    logout    Log out from a Docker registry  #从当前Docker registry退出</span><br><span class="line">    logs   	  Fetch the logs of a container  #输出当前容器日志信息</span><br><span class="line">    pause     Pause all processes within a container#暂停容器</span><br><span class="line">    port      List port mappings or a specific mapping for the CONTAINER  #查看映射端口对应的容器内部源端口</span><br><span class="line">    ps    	  List containers  #列出容器列表</span><br><span class="line">    pull      Pull an image or a repository from a registry  #从docker镜像源服务器拉取指定镜像或者库镜像</span><br><span class="line">    push      Push an image or a repository to a registry  #推送指定镜像或者库镜像至docker源服务器</span><br><span class="line">    rename    Rename a container  #重命名容器</span><br><span class="line">    restart   Restart a running container  #重启运行的容器</span><br><span class="line">    rm    	  Remove one or more containers  #移除一个或者多个容器</span><br><span class="line">    rmi    	  Remove one or more images  #移除一个或多个镜像(无容器使用该镜像才可以删除，否则需要删除相关容器才可以继续或者-f强制删除)</span><br><span class="line">    run   	  Run a command in a new container  #创建一个新的容器并运行一个命令</span><br><span class="line">    save      Save an image(s) to a tar archive#保存一个镜像为一个tar包(对应load)</span><br><span class="line">    search    Search the Docker Hub for images  #在docker</span><br><span class="line">hub中搜索镜像</span><br><span class="line">    start     Start one or more stopped containers#启动容器</span><br><span class="line">    stats     Display a live stream of container(s) resource usage statistics  #统计容器使用资源</span><br><span class="line">    stop      Stop a running container  #停止容器</span><br><span class="line">    tag       Tag an image into a repository  #给源中镜像打标签</span><br><span class="line">    top       Display the running processes of a container #查看容器中运行的进程信息</span><br><span class="line">    unpause   Unpause all processes within a container  #取消暂停容器</span><br><span class="line">    version   Show the Docker version information#查看容器版本号</span><br><span class="line">    wait      Block until a container stops, then print its exit code  #截取容器停止时的退出状态值</span><br></pre></td></tr></table></figure>
+
+<p>0x07 知识链接<br><a class="link"   target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzI2NjY5NzI0NA==&mid=2247503927&idx=4&sn=965bfa949efabcdc00623846b5430c54&chksm=ea88bf44ddff365281a99dabc1ce4045c2e4a1a464767cc41157e5402016c4ddbd1598d4e25b&mpshare=1&scene=23&srcid=1104UFEN08kUe8zc4TN8L1tK&sharer_sharetime=1636022562934&sharer_shareid=f392cc266ef9fa5f3024edf5fd5135ee#rd" >两小时入门 Docker(快速入门docker)<i class="fas fa-external-link-alt"></i></a></p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=Mzg3OTU4MDQ0Nw==&mid=2247484156&idx=1&sn=ebcc8f7c1659f67c00b02795e1d0d95b&chksm=cf03068cf8748f9aa6d677a9cdc25618cc6a1fabaa942b4561f08981565bdb084925109d218a&mpshare=1&scene=23&srcid=11045CxASpR3mALNpaNPImCt&sharer_sharetime=1636022780005&sharer_shareid=f392cc266ef9fa5f3024edf5fd5135ee#rd" >工具篇|kali linux中docker安装及应用<i class="fas fa-external-link-alt"></i></a></p>
+<p>本文转载自：<a class="link"   target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_46318141/article/details/121168812" >https://blog.csdn.net/weixin_46318141/article/details/121168812<i class="fas fa-external-link-alt"></i></a></p>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/blog/tags/docker/">docker</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                            <div class="post-share-container border-box">
+    <ul class="share-list-wrap border-box">
+        <li class="qq share-item border-box flex-center tooltip"
+            data-tooltip-content="分享到 QQ"
+        >
+            <i class="fa-brands fa-qq"></i>
+        </li>
+        <li class="wechat share-item border-box flex-center tooltip tooltip-img"
+            data-tooltip-content="分享到微信"
+            data-tooltip-img-tip="微信扫一扫"
+            data-tooltip-img-style="background-color: #fff; top: -10px; padding: 0.6rem 0.6rem 0.1rem 0.6rem;"
+        >
+            <i class="fa-brands fa-weixin"></i>
+        </li>
+        <li class="weibo share-item border-box flex-center tooltip"
+            data-tooltip-content="分享到微博"
+        >
+            <i class="fa-brands fa-weibo"></i>
+        </li>
+    </ul>
+</div>
+
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/blog/posts/1718314811.html"
+                                   title="dvwa中的sql盲注学习"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">dvwa中的sql盲注学习</span>
+                                        <span class="post-nav-item">上一篇</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/blog/posts/554823524.html"
+                                   title="windows下python2和python3共存方法"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">windows下python2和python3共存方法</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;评论
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">评论插件加载失败</span>
+    <button class="reload keep-button">点击重新加载</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">正在加载评论插件</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="valine-container">
+        <div id="vcomments"></div>
+        <script data-pjax
+                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        ></script>
+        <script data-pjax
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          window.KeepCommentPlugin.initValine = () => {
+            const config = {
+              el: '#vcomments',
+              appId: '562faema307N5X8bof7RojiO-gzGzoHsz',
+              appKey: 'EVBP1qXHDIxVo8hgiMchygVm',
+              meta: ['nick', 'mail', 'link'],
+              avatar: 'wavatar',
+              enableQQ: true,
+              placeholder: '啦啦啦啦啦啦啦~',
+              lang: 'zh-CN'.toLowerCase()
+            }
+
+            if ('') {
+              config.serverURLs = ''
+            }
+
+            if (window?.Valine) {
+              new Valine(config)
+              window.KeepCommentPlugin.hideLoading()
+            } else {
+              setTimeout(() => {
+                window.KeepCommentPlugin.initValine()
+              }, 1000)
+            }
+          }
+
+          if ('true' === 'true') {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initValine()
+            }, 1200)
+          } else {
+            window.addEventListener('DOMContentLoaded', window.KeepCommentPlugin.initValine)
+          }
+        </script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Docker%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8"><span class="nav-text">Docker的简单使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Docker%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-text">Docker的常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#docker-%E2%80%93help%E4%B8%AD%E6%96%87%E8%AF%91%E8%A7%A3"><span class="nav-text">docker –help中文译解</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;<span>2022</span>&nbsp;-&nbsp;2025
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/blog/">理想青年</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+            <li class="tools-item rss flex-center">
+                <a class="flex-center"
+                   href="/atom.xml"
+                   target="_blank"
+                >
+                    <i class="fas fa-rss"></i>
+                </a>
+            </li>
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Docker%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8"><span class="nav-text">Docker的简单使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Docker%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-text">Docker的常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#docker-%E2%80%93help%E4%B8%AD%E6%96%87%E8%AF%91%E8%A7%A3"><span class="nav-text">docker –help中文译解</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/utils.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/header-shrink.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/back2top.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/toggle-theme.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/code-block.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/main.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/libs/anime.min.js"></script>
+
+<!-- local search -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/local-search.min.js"></script>
+
+
+<!-- lazyload -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/lazyload.min.js"></script>
+
+
+<div class="pjax">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/post/post-helper.min.js"></script>
+
+        <!-- toc -->
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/post/toc.min.js"></script>
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/post/share.min.js"></script>
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart()
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd()
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
+            KEEP.initExecute()
+        });
+    });
+</script>
+
+
+
+
+    
+        
+            
+<script class="custom-inject-js" src="/blog/js/fireworks.js" data-pjax></script>
+
+        
+    
+
+</body>
+</html>

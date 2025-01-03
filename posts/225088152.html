@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="理想青年的博客">
+    <meta name="author" content="理想青年">
+    
+    <title>
+        
+            hexo-keep主题美化 |
+        
+        IdealYouth&#39;s Blog
+    </title>
+    
+<link rel="stylesheet" href="/blog/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/blog/images/head.jpg">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/font/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/font/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/font/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/font/css/brands.min.css">
+    
+        
+            
+                
+<link rel="stylesheet" href="/blog/css/custom-1.css">
+
+            
+        
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"idealyth.github.io","root":"/blog/","language":"zh-CN","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"IdealYouth's Blog","author":"理想青年","avatar":"/images/head.jpg","logo":"/images/head.jpg","favicon":"/images/head.jpg"},"menu":{"home":"/ || fa-solid fa-home","archives":"/archives || fa-solid fa-box-archive","tags":"/tags || fa-solid fa-tags","categories":"/categories || fa-solid fa-layer-group","links":"/links || fa-solid fa-link","about":"/about || fa-solid fa-user-graduate"},"first_screen":{"enable":false,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"Keep writing and Keep loving.","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":true,"percent":true,"hide_header":true},"home":{"announcement":"啦啦啦啦啦啦啦~","category":true,"tag":false,"post_datetime":"updated"},"post":{"author_badge":{"enable":true,"level_badge":false,"custom_badge":["下三品","中三品","二品","金刚","指玄","天象","陆地神仙"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":true,"reward":{"enable":false,"img_link":null,"text":"请作者喝咖啡","icon":null},"created_datetime_icon":"fa-solid fa-pen-to-square","updated_datetime_icon":"fa-solid fa-arrows-rotate"},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"obsidian"},"toc":{"enable":true,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":false,"site_pv":false,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"valine","valine":{"appid":"562faema307N5X8bof7RojiO-gzGzoHsz","appkey":"EVBP1qXHDIxVo8hgiMchygVm","server_urls":null,"placeholder":"啦啦啦啦啦啦啦~"},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.39"},"waline":{"server_url":null,"reaction":false,"version":"3.3.2"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":true},"lazyload":{"enable":true},"cdn":{"enable":true,"provider":"cdnjs"},"pjax":{"enable":true},"footer":{"since":2022,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":true,"css":["/css/custom-1.css"],"js":["/js/fireworks.js"]},"root":"/blog","source_data":{"links":[{"title":"Friend"},{"name":"AManYoo","link":"https://amanyoo.github.io/","description":"能坚持别人不能坚持的，才能拥有别人不能拥有的。","avatar":"https://amanyoo.github.io/img/aman5.webp"},{"name":"XPoet","link":"https://xpoet.cn/","description":"所有命运的馈赠，早已在暗中标好价格。","avatar":"https://cdn.jsdelivr.net/gh/XPoet/image-hosting@master/common-use/avatar.jpg"},{"name":"不知名艺术家","link":"https://jinzhanqi.com/","description":"love artist, love code.","avatar":"https://s3.ax1x.com/2020/11/17/DVvkB4.jpg"}]},"version":"4.2.5"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/blog/atom.xml" title="理想青年" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/blog/">
+                    <img src="/blog/images/head.jpg">
+                </a>
+            
+            <a class="site-name border-box" href="/blog/">
+               IdealYouth&#39;s Blog
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/blog/">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-home"></i>
+                                
+                                首页
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/blog/archives">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                
+                                归档
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/blog/tags">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-tags"></i>
+                                
+                                标签
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/blog/categories">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-layer-group"></i>
+                                
+                                分类
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/blog/links">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-link"></i>
+                                
+                                友链
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/blog/about">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                
+                                关于
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/blog/">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-home"></i>
+                                </span>
+                            
+                            首页
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/blog/archives">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                </span>
+                            
+                            归档
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/blog/tags">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-tags"></i>
+                                </span>
+                            
+                            标签
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/blog/categories">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-layer-group"></i>
+                                </span>
+                            
+                            分类
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/blog/links">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-link"></i>
+                                </span>
+                            
+                            友链
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/blog/about">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                </span>
+                            
+                            关于
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        hexo-keep主题美化
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/blog/images/head.jpg">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">理想青年</span>
+                                
+                                    <span class="author-badge">中三品</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-pen-to-square"></i>&nbsp;
+                <span class="datetime">2022-04-03 12:47:23</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-arrows-rotate"></i>&nbsp;
+                    <span class="datetime" data-updated="Fri Jan 03 2025 05:44:08 GMT+0000">2025-01-03 05:44:08</span>
+                </span>
+            
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/blog/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/blog/tags/hexo/">hexo</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/blog/tags/%E7%BE%8E%E5%8C%96/">美化</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/blog/tags/%E7%BD%91%E7%AB%99/">网站</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+            <span class="meta-info-item post-wordcount">
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>2.8k 字</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-min2read">
+                <i class="icon fas fa-clock"></i>&nbsp;<span>15 分钟</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><p><strong>利用inject注入美化主题，后续就可以平滑升级了</strong></p>
+<p>首先打开主题配置文件中的inject，并添加如下内容</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span>  <span class="comment"># Option values: true | false</span></span><br><span class="line">  <span class="attr">css:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">/css/custom-1.css</span></span><br><span class="line">    <span class="comment"># e.g.</span></span><br><span class="line">    <span class="comment"># - /css/custom-1.css</span></span><br><span class="line">    <span class="comment"># - /css/custom-2.css</span></span><br><span class="line">    <span class="comment"># - ...</span></span><br><span class="line">  <span class="attr">js:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">/js/fireworks.js</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>鼠标点击效果</strong></p>
+<p>在hexo根目录下的source文件夹下新建js文件夹。创建fireworks.js文件，并加入如下代码:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&quot;use strict&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 更新坐标</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">updateCoords</span>(<span class="params">e</span>) &#123;</span><br><span class="line">    pointerX = (e.<span class="property">clientX</span> || e.<span class="property">touches</span>[<span class="number">0</span>].<span class="property">clientX</span>) - canvasEl.<span class="title function_">getBoundingClientRect</span>().<span class="property">left</span>;</span><br><span class="line">    pointerY = (e.<span class="property">clientY</span> || e.<span class="property">touches</span>[<span class="number">0</span>].<span class="property">clientY</span>) - canvasEl.<span class="title function_">getBoundingClientRect</span>().<span class="property">top</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 设置粒子方向</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">setParticuleDirection</span>(<span class="params">e</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> angle = anime.<span class="title function_">random</span>(<span class="number">0</span>, <span class="number">360</span>) * <span class="title class_">Math</span>.<span class="property">PI</span> / <span class="number">180</span>;</span><br><span class="line">    <span class="keyword">var</span> value = anime.<span class="title function_">random</span>(<span class="number">50</span>, <span class="number">180</span>);</span><br><span class="line">    <span class="keyword">var</span> direction = [-<span class="number">1</span>, <span class="number">1</span>][anime.<span class="title function_">random</span>(<span class="number">0</span>, <span class="number">1</span>)] * value;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        <span class="attr">x</span>: e.<span class="property">x</span> + direction * <span class="title class_">Math</span>.<span class="title function_">cos</span>(angle),</span><br><span class="line">        <span class="attr">y</span>: e.<span class="property">y</span> + direction * <span class="title class_">Math</span>.<span class="title function_">sin</span>(angle)</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 创建粒子</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">createParticule</span>(<span class="params">x, y</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> p = &#123;&#125;;</span><br><span class="line">    p.<span class="property">x</span> = x;</span><br><span class="line">    p.<span class="property">y</span> = y;</span><br><span class="line">    p.<span class="property">color</span> = colors[anime.<span class="title function_">random</span>(<span class="number">0</span>, colors.<span class="property">length</span> - <span class="number">1</span>)];</span><br><span class="line">    p.<span class="property">radius</span> = anime.<span class="title function_">random</span>(<span class="number">16</span>, <span class="number">32</span>);</span><br><span class="line">    p.<span class="property">endPos</span> = <span class="title function_">setParticuleDirection</span>(p);</span><br><span class="line">    p.<span class="property">draw</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">        ctx.<span class="title function_">beginPath</span>();</span><br><span class="line">        ctx.<span class="title function_">arc</span>(p.<span class="property">x</span>, p.<span class="property">y</span>, p.<span class="property">radius</span>, <span class="number">0</span>, <span class="number">2</span> * <span class="title class_">Math</span>.<span class="property">PI</span>, <span class="literal">true</span>);</span><br><span class="line">        ctx.<span class="property">fillStyle</span> = p.<span class="property">color</span>;</span><br><span class="line">        ctx.<span class="title function_">fill</span>();</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">return</span> p;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 创建圆圈</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">createCircle</span>(<span class="params">x, y</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> c = &#123;&#125;;</span><br><span class="line">    c.<span class="property">x</span> = x;</span><br><span class="line">    c.<span class="property">y</span> = y;</span><br><span class="line">    c.<span class="property">color</span> = <span class="string">&quot;#F00&quot;</span>;</span><br><span class="line">    c.<span class="property">radius</span> = <span class="number">0.1</span>;</span><br><span class="line">    c.<span class="property">alpha</span> = <span class="number">0.5</span>;</span><br><span class="line">    c.<span class="property">lineWidth</span> = <span class="number">6</span>;</span><br><span class="line">    c.<span class="property">draw</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">        ctx.<span class="property">globalAlpha</span> = c.<span class="property">alpha</span>;</span><br><span class="line">        ctx.<span class="title function_">beginPath</span>();</span><br><span class="line">        ctx.<span class="title function_">arc</span>(c.<span class="property">x</span>, c.<span class="property">y</span>, c.<span class="property">radius</span>, <span class="number">0</span>, <span class="number">2</span> * <span class="title class_">Math</span>.<span class="property">PI</span>, <span class="literal">true</span>);</span><br><span class="line">        ctx.<span class="property">lineWidth</span> = c.<span class="property">lineWidth</span>;</span><br><span class="line">        ctx.<span class="property">strokeStyle</span> = c.<span class="property">color</span>;</span><br><span class="line">        ctx.<span class="title function_">stroke</span>();</span><br><span class="line">        ctx.<span class="property">globalAlpha</span> = <span class="number">1</span>;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">return</span> c;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 渲染粒子</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">renderParticule</span>(<span class="params">anim</span>) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; anim.<span class="property">animatables</span>.<span class="property">length</span>; i++) &#123;</span><br><span class="line">        anim.<span class="property">animatables</span>[i].<span class="property">target</span>.<span class="title function_">draw</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 动画粒子</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">animateParticules</span>(<span class="params">x, y</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> circle = <span class="title function_">createCircle</span>(x, y);</span><br><span class="line">    <span class="keyword">var</span> particules = [];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; numberOfParticules; i++) &#123;</span><br><span class="line">        particules.<span class="title function_">push</span>(<span class="title function_">createParticule</span>(x, y));</span><br><span class="line">    &#125;</span><br><span class="line">    anime.<span class="title function_">timeline</span>().<span class="title function_">add</span>(&#123;</span><br><span class="line">        <span class="attr">targets</span>: particules,</span><br><span class="line">        <span class="attr">x</span>: <span class="keyword">function</span> (<span class="params">p</span>) &#123; <span class="keyword">return</span> p.<span class="property">endPos</span>.<span class="property">x</span>; &#125;,</span><br><span class="line">        <span class="attr">y</span>: <span class="keyword">function</span> (<span class="params">p</span>) &#123; <span class="keyword">return</span> p.<span class="property">endPos</span>.<span class="property">y</span>; &#125;,</span><br><span class="line">        <span class="attr">radius</span>: <span class="number">0.1</span>,</span><br><span class="line">        <span class="attr">duration</span>: anime.<span class="title function_">random</span>(<span class="number">1200</span>, <span class="number">1800</span>),</span><br><span class="line">        <span class="attr">easing</span>: <span class="string">&quot;easeOutExpo&quot;</span>,</span><br><span class="line">        <span class="attr">update</span>: renderParticule</span><br><span class="line">    &#125;).<span class="title function_">add</span>(&#123;</span><br><span class="line">        <span class="attr">targets</span>: circle,</span><br><span class="line">        <span class="attr">radius</span>: anime.<span class="title function_">random</span>(<span class="number">80</span>, <span class="number">160</span>),</span><br><span class="line">        <span class="attr">lineWidth</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">alpha</span>: &#123; <span class="attr">value</span>: <span class="number">0</span>, <span class="attr">easing</span>: <span class="string">&quot;linear&quot;</span>, <span class="attr">duration</span>: anime.<span class="title function_">random</span>(<span class="number">600</span>, <span class="number">800</span>) &#125;,</span><br><span class="line">        <span class="attr">duration</span>: anime.<span class="title function_">random</span>(<span class="number">1200</span>, <span class="number">1800</span>),</span><br><span class="line">        <span class="attr">easing</span>: <span class="string">&quot;easeOutExpo&quot;</span>,</span><br><span class="line">        <span class="attr">update</span>: renderParticule,</span><br><span class="line">        <span class="attr">offset</span>: <span class="number">0</span></span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 防抖函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">debounce</span>(<span class="params">func, wait</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> timeout;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">var</span> context = <span class="variable language_">this</span>, args = <span class="variable language_">arguments</span>;</span><br><span class="line">        <span class="built_in">clearTimeout</span>(timeout);</span><br><span class="line">        timeout = <span class="built_in">setTimeout</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">            func.<span class="title function_">apply</span>(context, args);</span><br><span class="line">        &#125;, wait);</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 初始化</span></span><br><span class="line"><span class="keyword">var</span> canvasEl = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.fireworks&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (canvasEl) &#123;</span><br><span class="line">    <span class="keyword">var</span> ctx = canvasEl.<span class="title function_">getContext</span>(<span class="string">&quot;2d&quot;</span>);</span><br><span class="line">    <span class="keyword">var</span> numberOfParticules = <span class="number">30</span>;</span><br><span class="line">    <span class="keyword">var</span> pointerX = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">var</span> pointerY = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">var</span> tap = <span class="string">&quot;mousedown&quot;</span>;</span><br><span class="line">    <span class="keyword">var</span> colors = [<span class="string">&quot;#FF1461&quot;</span>, <span class="string">&quot;#18FF92&quot;</span>, <span class="string">&quot;#5A87FF&quot;</span>, <span class="string">&quot;#FBF38C&quot;</span>];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> setCanvasSize = <span class="title function_">debounce</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">        canvasEl.<span class="property">width</span> = <span class="number">2</span> * <span class="variable language_">window</span>.<span class="property">innerWidth</span>;</span><br><span class="line">        canvasEl.<span class="property">height</span> = <span class="number">2</span> * <span class="variable language_">window</span>.<span class="property">innerHeight</span>;</span><br><span class="line">        canvasEl.<span class="property">style</span>.<span class="property">width</span> = <span class="variable language_">window</span>.<span class="property">innerWidth</span> + <span class="string">&quot;px&quot;</span>;</span><br><span class="line">        canvasEl.<span class="property">style</span>.<span class="property">height</span> = <span class="variable language_">window</span>.<span class="property">innerHeight</span> + <span class="string">&quot;px&quot;</span>;</span><br><span class="line">        canvasEl.<span class="title function_">getContext</span>(<span class="string">&quot;2d&quot;</span>).<span class="title function_">scale</span>(<span class="number">2</span>, <span class="number">2</span>);</span><br><span class="line">    &#125;, <span class="number">500</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> render = <span class="title function_">anime</span>(&#123;</span><br><span class="line">        <span class="attr">duration</span>: <span class="title class_">Infinity</span>,</span><br><span class="line">        <span class="attr">update</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">            ctx.<span class="title function_">clearRect</span>(<span class="number">0</span>, <span class="number">0</span>, canvasEl.<span class="property">width</span>, canvasEl.<span class="property">height</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="variable language_">document</span>.<span class="title function_">addEventListener</span>(tap, <span class="keyword">function</span> (<span class="params">e</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (e.<span class="property">target</span>.<span class="property">id</span> !== <span class="string">&quot;sidebar&quot;</span> &amp;&amp; e.<span class="property">target</span>.<span class="property">id</span> !== <span class="string">&quot;toggle-sidebar&quot;</span> &amp;&amp; e.<span class="property">target</span>.<span class="property">nodeName</span> !== <span class="string">&quot;A&quot;</span> &amp;&amp; e.<span class="property">target</span>.<span class="property">nodeName</span> !== <span class="string">&quot;IMG&quot;</span>) &#123;</span><br><span class="line">            render.<span class="title function_">play</span>();</span><br><span class="line">            <span class="title function_">updateCoords</span>(e);</span><br><span class="line">            <span class="title function_">animateParticules</span>(pointerX, pointerY);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;, <span class="literal">false</span>);</span><br><span class="line"></span><br><span class="line">    <span class="title function_">setCanvasSize</span>();</span><br><span class="line">    <span class="variable language_">window</span>.<span class="title function_">addEventListener</span>(<span class="string">&quot;resize&quot;</span>, setCanvasSize, <span class="literal">false</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>然后在主题目录下的layout\layout.ejs&#96;中加入代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas class=&quot;fireworks&quot; style=&quot;position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;&quot; &gt;&lt;/canvas&gt; </span><br><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.bootcss.com/animejs/2.2.0/anime.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/clickBom.js&quot;&gt;&lt;/script&gt;    //线上的烟花特效js文件</span><br></pre></td></tr></table></figure>
+
+<p><strong>头像旋转+鼠标指针样式+文章中图片排列</strong></p>
+<p>在hexo根目录下的source文件夹下新建css文件夹。创建custom-1.css文件，并加入如下代码:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-pseudo">:root</span> &#123;</span><br><span class="line"></span><br><span class="line">   <span class="comment">/* </span></span><br><span class="line"><span class="comment">       设置文章中的图片排列位置</span></span><br><span class="line"><span class="comment">       居左：0 auto 0 0（默认）</span></span><br><span class="line"><span class="comment">       居中：0 auto</span></span><br><span class="line"><span class="comment">       居右：0 0 0 auto</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="attr">--post-img-align</span>: <span class="number">0</span> auto;</span><br><span class="line"></span><br><span class="line">   <span class="comment">/* 鼠标样式 */</span></span><br><span class="line">   <span class="selector-tag">body</span> &#123;</span><br><span class="line">      <span class="attribute">cursor</span>: <span class="built_in">url</span>(<span class="string">https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071208706.cur</span>), auto;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="selector-tag">a</span> &#123;</span><br><span class="line">      <span class="attribute">cursor</span>: <span class="built_in">url</span>(<span class="string">https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071205091.cur</span>), auto <span class="meta">!important</span>;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">   <span class="comment">/* 头像旋转 */</span></span><br><span class="line">   <span class="selector-class">.avatar-box</span> &#123;</span><br><span class="line">      <span class="selector-tag">img</span> &#123;</span><br><span class="line">         <span class="attribute">transition</span>: transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">         <span class="attribute">transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="selector-class">.posts-expand</span> <span class="selector-class">.post-body</span> <span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">         <span class="attribute">transform</span>: initial;</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="1-添加卡通人物"><a href="#1-添加卡通人物" class="headerlink" title="1.添加卡通人物"></a>1.添加卡通人物</h2><p>进入该项目地址<a class="link"   target="_blank" rel="noopener" href="https://github.com/EYHN/hexo-helper-live2d" >点击此处<i class="fas fa-external-link-alt"></i></a></p>
+<p>在博客根目录下输入命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
+
+<p>然后下载你喜欢的模型，将 packagename 更换成模型名称，模型选择请<a class="link"   target="_blank" rel="noopener" href="https://github.com/xiazeyu/live2d-widget-models" >点击此处<i class="fas fa-external-link-alt"></i></a>，各个模型的预览请<a class="link"   target="_blank" rel="noopener" href="https://huaji8.top/post/live2d-plugin-2.0/" >查看原作者的博客<i class="fas fa-external-link-alt"></i></a>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install packagename</span><br></pre></td></tr></table></figure>
+
+<p>打开博客目录下的 _config.yml 文件，添加代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"># Live2D</span><br><span class="line">## https://github.com/EYHN/hexo-helper-live2d</span><br><span class="line">live2d:</span><br><span class="line">  enable: true</span><br><span class="line">  # enable: false</span><br><span class="line">  scriptFrom: local # 默认</span><br><span class="line">  pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)</span><br><span class="line">  pluginJsPath: lib/ # 脚本文件相对与插件根目录路径</span><br><span class="line">  pluginModelPath: assets/ # 模型文件相对与插件根目录路径</span><br><span class="line">  # scriptFrom: jsdelivr # jsdelivr CDN</span><br><span class="line">  # scriptFrom: unpkg # unpkg CDN</span><br><span class="line">  # scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url</span><br><span class="line">  tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中</span><br><span class="line">  debug: false # 调试, 是否在控制台输出日志</span><br><span class="line">  model:</span><br><span class="line">    use: live2d-widget-model-shizuku # npm-module package name</span><br><span class="line">    # use: wanko # 博客根目录/live2d_models/ 下的目录名</span><br><span class="line">    # use: ./wives/wanko # 相对于博客根目录的路径</span><br><span class="line">    # use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url</span><br><span class="line">    scale: 1</span><br><span class="line">    hHeadPos: 0.5</span><br><span class="line">    vHeadPos: 0.618</span><br><span class="line">  display:</span><br><span class="line">    superSample: 2</span><br><span class="line">    width: 150      #模型宽度</span><br><span class="line">    height: 300     #模型高度</span><br><span class="line">    position: left    #模型位置</span><br><span class="line">    hOffset: 130    #水平偏移</span><br><span class="line">    vOffset: -20     #垂直偏移</span><br><span class="line">  mobile:</span><br><span class="line">    show: true       #是否在手机端显示</span><br><span class="line">    scale: 0.5</span><br><span class="line">  react:</span><br><span class="line">    opacityDefault: 0.7</span><br><span class="line">    opacityOnHover: 0.2</span><br></pre></td></tr></table></figure>
+
+<p>注意:**use: <u>live2d-widget-model-shizuku</u>**一定要改成你的模型名字！！！</p>
+<p>然后保存即可。</p>
+<h2 id="2-Hexo鼠标点击烟花爆炸效果"><a href="#2-Hexo鼠标点击烟花爆炸效果" class="headerlink" title="2.Hexo鼠标点击烟花爆炸效果"></a>2.Hexo鼠标点击烟花爆炸效果</h2><p>在 \themes\keep\source\js 目录下新建一个文件，命名为fireworks.js，里面写入以下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;use strict&quot;;function updateCoords(e)&#123;pointerX=(e.clientX||e.touches[0].clientX)-canvasEl.getBoundingClientRect().left,pointerY=e.clientY||e.touches[0].clientY-canvasEl.getBoundingClientRect().top&#125;function setParticuleDirection(e)&#123;var t=anime.random(0,360)*Math.PI/180,a=anime.random(50,180),n=[-1,1][anime.random(0,1)]*a;return&#123;x:e.x+n*Math.cos(t),y:e.y+n*Math.sin(t)&#125;&#125;function createParticule(e,t)&#123;var a=&#123;&#125;;return a.x=e,a.y=t,a.color=colors[anime.random(0,colors.length-1)],a.radius=anime.random(16,32),a.endPos=setParticuleDirection(a),a.draw=function()&#123;ctx.beginPath(),ctx.arc(a.x,a.y,a.radius,0,2*Math.PI,!0),ctx.fillStyle=a.color,ctx.fill()&#125;,a&#125;function createCircle(e,t)&#123;var a=&#123;&#125;;return a.x=e,a.y=t,a.color=&quot;#F00&quot;,a.radius=0.1,a.alpha=0.5,a.lineWidth=6,a.draw=function()&#123;ctx.globalAlpha=a.alpha,ctx.beginPath(),ctx.arc(a.x,a.y,a.radius,0,2*Math.PI,!0),ctx.lineWidth=a.lineWidth,ctx.strokeStyle=a.color,ctx.stroke(),ctx.globalAlpha=1&#125;,a&#125;function renderParticule(e)&#123;for(var t=0;t&lt;e.animatables.length;t++)&#123;e.animatables[t].target.draw()&#125;&#125;function animateParticules(e,t)&#123;for(var a=createCircle(e,t),n=[],i=0;i&lt;numberOfParticules;i++)&#123;n.push(createParticule(e,t))&#125;anime.timeline().add(&#123;targets:n,x:function(e)&#123;return e.endPos.x&#125;,y:function(e)&#123;return e.endPos.y&#125;,radius:0.1,duration:anime.random(1200,1800),easing:&quot;easeOutExpo&quot;,update:renderParticule&#125;).add(&#123;targets:a,radius:anime.random(80,160),lineWidth:0,alpha:&#123;value:0,easing:&quot;linear&quot;,duration:anime.random(600,800)&#125;,duration:anime.random(1200,1800),easing:&quot;easeOutExpo&quot;,update:renderParticule,offset:0&#125;)&#125;function debounce(e,t)&#123;var a;return function()&#123;var n=this,i=arguments;clearTimeout(a),a=setTimeout(function()&#123;e.apply(n,i)&#125;,t)&#125;&#125;var canvasEl=document.querySelector(&quot;.fireworks&quot;);if(canvasEl)&#123;var ctx=canvasEl.getContext(&quot;2d&quot;),numberOfParticules=30,pointerX=0,pointerY=0,tap=&quot;mousedown&quot;,colors=[&quot;#FF1461&quot;,&quot;#18FF92&quot;,&quot;#5A87FF&quot;,&quot;#FBF38C&quot;],setCanvasSize=debounce(function()&#123;canvasEl.width=2*window.innerWidth,canvasEl.height=2*window.innerHeight,canvasEl.style.width=window.innerWidth+&quot;px&quot;,canvasEl.style.height=window.innerHeight+&quot;px&quot;,canvasEl.getContext(&quot;2d&quot;).scale(2,2)&#125;,500),render=anime(&#123;duration:1/0,update:function()&#123;ctx.clearRect(0,0,canvasEl.width,canvasEl.height)&#125;&#125;);document.addEventListener(tap,function(e)&#123;&quot;sidebar&quot;!==e.target.id&amp;&amp;&quot;toggle-sidebar&quot;!==e.target.id&amp;&amp;&quot;A&quot;!==e.target.nodeName&amp;&amp;&quot;IMG&quot;!==e.target.nodeName&amp;&amp;(render.play(),updateCoords(e),animateParticules(pointerX,pointerY))&#125;,!1),setCanvasSize(),window.addEventListener(&quot;resize&quot;,setCanvasSize,!1)&#125;&quot;use strict&quot;;function updateCoords(e)&#123;pointerX=(e.clientX||e.touches[0].clientX)-canvasEl.getBoundingClientRect().left,pointerY=e.clientY||e.touches[0].clientY-canvasEl.getBoundingClientRect().top&#125;function setParticuleDirection(e)&#123;var t=anime.random(0,360)*Math.PI/180,a=anime.random(50,180),n=[-1,1][anime.random(0,1)]*a;return&#123;x:e.x+n*Math.cos(t),y:e.y+n*Math.sin(t)&#125;&#125;function createParticule(e,t)&#123;var a=&#123;&#125;;return a.x=e,a.y=t,a.color=colors[anime.random(0,colors.length-1)],a.radius=anime.random(16,32),a.endPos=setParticuleDirection(a),a.draw=function()&#123;ctx.beginPath(),ctx.arc(a.x,a.y,a.radius,0,2*Math.PI,!0),ctx.fillStyle=a.color,ctx.fill()&#125;,a&#125;function createCircle(e,t)&#123;var a=&#123;&#125;;return a.x=e,a.y=t,a.color=&quot;#F00&quot;,a.radius=0.1,a.alpha=0.5,a.lineWidth=6,a.draw=function()&#123;ctx.globalAlpha=a.alpha,ctx.beginPath(),ctx.arc(a.x,a.y,a.radius,0,2*Math.PI,!0),ctx.lineWidth=a.lineWidth,ctx.strokeStyle=a.color,ctx.stroke(),ctx.globalAlpha=1&#125;,a&#125;function renderParticule(e)&#123;for(var t=0;t&lt;e.animatables.length;t++)&#123;e.animatables[t].target.draw()&#125;&#125;function animateParticules(e,t)&#123;for(var a=createCircle(e,t),n=[],i=0;i&lt;numberOfParticules;i++)&#123;n.push(createParticule(e,t))&#125;anime.timeline().add(&#123;targets:n,x:function(e)&#123;return e.endPos.x&#125;,y:function(e)&#123;return e.endPos.y&#125;,radius:0.1,duration:anime.random(1200,1800),easing:&quot;easeOutExpo&quot;,update:renderParticule&#125;).add(&#123;targets:a,radius:anime.random(80,160),lineWidth:0,alpha:&#123;value:0,easing:&quot;linear&quot;,duration:anime.random(600,800)&#125;,duration:anime.random(1200,1800),easing:&quot;easeOutExpo&quot;,update:renderParticule,offset:0&#125;)&#125;function debounce(e,t)&#123;var a;return function()&#123;var n=this,i=arguments;clearTimeout(a),a=setTimeout(function()&#123;e.apply(n,i)&#125;,t)&#125;&#125;var canvasEl=document.querySelector(&quot;.fireworks&quot;);if(canvasEl)&#123;var ctx=canvasEl.getContext(&quot;2d&quot;),numberOfParticules=30,pointerX=0,pointerY=0,tap=&quot;mousedown&quot;,colors=[&quot;#FF1461&quot;,&quot;#18FF92&quot;,&quot;#5A87FF&quot;,&quot;#FBF38C&quot;],setCanvasSize=debounce(function()&#123;canvasEl.width=2*window.innerWidth,canvasEl.height=2*window.innerHeight,canvasEl.style.width=window.innerWidth+&quot;px&quot;,canvasEl.style.height=window.innerHeight+&quot;px&quot;,canvasEl.getContext(&quot;2d&quot;).scale(2,2)&#125;,500),render=anime(&#123;duration:1/0,update:function()&#123;ctx.clearRect(0,0,canvasEl.width,canvasEl.height)&#125;&#125;);document.addEventListener(tap,function(e)&#123;&quot;sidebar&quot;!==e.target.id&amp;&amp;&quot;toggle-sidebar&quot;!==e.target.id&amp;&amp;&quot;A&quot;!==e.target.nodeName&amp;&amp;&quot;IMG&quot;!==e.target.nodeName&amp;&amp;(render.play(),updateCoords(e),animateParticules(pointerX,pointerY))&#125;,!1),setCanvasSize(),window.addEventListener(&quot;resize&quot;,setCanvasSize,!1)&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>然后在<code>Hexo\themes\keep\layout\layout.ejs</code>中加入代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas class=&quot;fireworks&quot; style=&quot;position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;&quot; &gt;&lt;/canvas&gt; </span><br><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.bootcss.com/animejs/2.2.0/anime.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/clickBom.js&quot;&gt;&lt;/script&gt;    //线上的烟花特效js文件</span><br><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;/js/fireworks.js&quot;&gt;&lt;/script&gt;   //本地的烟花特效js文件</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-keep主题下头像旋转"><a href="#3-keep主题下头像旋转" class="headerlink" title="3.keep主题下头像旋转"></a>3.keep主题下头像旋转</h2><p>在博客根目录下themes\keep\source\css\layout\post-content.styl文件内的.avatar内加入如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">transition: transform 1.0s ease-out;//img内加入</span><br><span class="line"></span><br><span class="line">img:hover &#123;</span><br><span class="line">    transform: rotateZ(360deg);</span><br><span class="line">&#125;</span><br><span class="line">.posts-expand .post-body img:hover &#123;</span><br><span class="line">    transform: initial;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-设置博客文章持久化连接"><a href="#4-设置博客文章持久化连接" class="headerlink" title="4.设置博客文章持久化连接"></a>4.设置博客文章持久化连接</h2><p>安装 <code>hexo-abbrlink</code> 插件 。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+
+<p>在博客根目录下的配置文件中添加如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># abbrlink config</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32      #support crc16(default) and crc32</span><br><span class="line">  rep: dec        #support dec(default) and hex</span><br><span class="line">  drafts: false   #(true)Process draft,(false)Do not process draft. false(default) </span><br><span class="line">  # Generate categories from directory-tree</span><br><span class="line">  # depth: the max_depth of directory-tree you want to generate, should &gt; 0</span><br><span class="line">  auto_category:</span><br><span class="line">     enable: true  #true(default)</span><br><span class="line">     depth:        #3(default)</span><br><span class="line">     over_write: false </span><br><span class="line">  auto_title: false #enable auto title, it can auto fill the title by path</span><br><span class="line">  auto_date: false #enable auto date, it can auto fill the date by time today</span><br><span class="line">  force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink. This only updates abbrlink rather than other front variables.</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-设置鼠标指针样式"><a href="#5-设置鼠标指针样式" class="headerlink" title="5.设置鼠标指针样式"></a>5.设置鼠标指针样式</h2><p>在<code>Hexo\themes\keep\source\css</code>中，新建文件夹my，然后在文件夹中创建mouse.styl文件，粘贴以下代码。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">	cursor: url(https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071208706.cur), auto;</span><br><span class="line">&#125;</span><br><span class="line">a &#123;</span><br><span class="line">	cursor: url(https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071205091.cur), auto!important;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后打开<code>Hexo\themes\keep\source\css</code>中的style.styl文件，在里面添加引用<code>@import &quot;my/mouse.styl&quot;</code></p>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/blog/tags/hexo/">hexo</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/blog/tags/%E7%BE%8E%E5%8C%96/">美化</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/blog/tags/%E7%BD%91%E7%AB%99/">网站</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                            <div class="post-share-container border-box">
+    <ul class="share-list-wrap border-box">
+        <li class="qq share-item border-box flex-center tooltip"
+            data-tooltip-content="分享到 QQ"
+        >
+            <i class="fa-brands fa-qq"></i>
+        </li>
+        <li class="wechat share-item border-box flex-center tooltip tooltip-img"
+            data-tooltip-content="分享到微信"
+            data-tooltip-img-tip="微信扫一扫"
+            data-tooltip-img-style="background-color: #fff; top: -10px; padding: 0.6rem 0.6rem 0.1rem 0.6rem;"
+        >
+            <i class="fa-brands fa-weixin"></i>
+        </li>
+        <li class="weibo share-item border-box flex-center tooltip"
+            data-tooltip-content="分享到微博"
+        >
+            <i class="fa-brands fa-weibo"></i>
+        </li>
+    </ul>
+</div>
+
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/blog/posts/4220737426.html"
+                                   title="Kali下安装docker和docker-compose"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">Kali下安装docker和docker-compose</span>
+                                        <span class="post-nav-item">上一篇</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/blog/posts/2301763326.html"
+                                   title="web安全一些名词解释"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">web安全一些名词解释</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;评论
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">评论插件加载失败</span>
+    <button class="reload keep-button">点击重新加载</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">正在加载评论插件</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="valine-container">
+        <div id="vcomments"></div>
+        <script data-pjax
+                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        ></script>
+        <script data-pjax
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          window.KeepCommentPlugin.initValine = () => {
+            const config = {
+              el: '#vcomments',
+              appId: '562faema307N5X8bof7RojiO-gzGzoHsz',
+              appKey: 'EVBP1qXHDIxVo8hgiMchygVm',
+              meta: ['nick', 'mail', 'link'],
+              avatar: 'wavatar',
+              enableQQ: true,
+              placeholder: '啦啦啦啦啦啦啦~',
+              lang: 'zh-CN'.toLowerCase()
+            }
+
+            if ('') {
+              config.serverURLs = ''
+            }
+
+            if (window?.Valine) {
+              new Valine(config)
+              window.KeepCommentPlugin.hideLoading()
+            } else {
+              setTimeout(() => {
+                window.KeepCommentPlugin.initValine()
+              }, 1000)
+            }
+          }
+
+          if ('true' === 'true') {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initValine()
+            }, 1200)
+          } else {
+            window.addEventListener('DOMContentLoaded', window.KeepCommentPlugin.initValine)
+          }
+        </script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0"><span class="nav-text">更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%B7%BB%E5%8A%A0%E5%8D%A1%E9%80%9A%E4%BA%BA%E7%89%A9"><span class="nav-text">1.添加卡通人物</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Hexo%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E7%83%9F%E8%8A%B1%E7%88%86%E7%82%B8%E6%95%88%E6%9E%9C"><span class="nav-text">2.Hexo鼠标点击烟花爆炸效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-keep%E4%B8%BB%E9%A2%98%E4%B8%8B%E5%A4%B4%E5%83%8F%E6%97%8B%E8%BD%AC"><span class="nav-text">3.keep主题下头像旋转</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E8%AE%BE%E7%BD%AE%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8C%81%E4%B9%85%E5%8C%96%E8%BF%9E%E6%8E%A5"><span class="nav-text">4.设置博客文章持久化连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E8%AE%BE%E7%BD%AE%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%E6%A0%B7%E5%BC%8F"><span class="nav-text">5.设置鼠标指针样式</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;<span>2022</span>&nbsp;-&nbsp;2025
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/blog/">理想青年</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+            <li class="tools-item rss flex-center">
+                <a class="flex-center"
+                   href="/atom.xml"
+                   target="_blank"
+                >
+                    <i class="fas fa-rss"></i>
+                </a>
+            </li>
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0"><span class="nav-text">更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%B7%BB%E5%8A%A0%E5%8D%A1%E9%80%9A%E4%BA%BA%E7%89%A9"><span class="nav-text">1.添加卡通人物</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Hexo%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E7%83%9F%E8%8A%B1%E7%88%86%E7%82%B8%E6%95%88%E6%9E%9C"><span class="nav-text">2.Hexo鼠标点击烟花爆炸效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-keep%E4%B8%BB%E9%A2%98%E4%B8%8B%E5%A4%B4%E5%83%8F%E6%97%8B%E8%BD%AC"><span class="nav-text">3.keep主题下头像旋转</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E8%AE%BE%E7%BD%AE%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8C%81%E4%B9%85%E5%8C%96%E8%BF%9E%E6%8E%A5"><span class="nav-text">4.设置博客文章持久化连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E8%AE%BE%E7%BD%AE%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%E6%A0%B7%E5%BC%8F"><span class="nav-text">5.设置鼠标指针样式</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/utils.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/header-shrink.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/back2top.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/toggle-theme.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/code-block.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/main.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/libs/anime.min.js"></script>
+
+<!-- local search -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/local-search.min.js"></script>
+
+
+<!-- lazyload -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/lazyload.min.js"></script>
+
+
+<div class="pjax">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/post/post-helper.min.js"></script>
+
+        <!-- toc -->
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/post/toc.min.js"></script>
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/post/share.min.js"></script>
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart()
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd()
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
+            KEEP.initExecute()
+        });
+    });
+</script>
+
+
+
+
+    
+        
+            
+<script class="custom-inject-js" src="/blog/js/fireworks.js" data-pjax></script>
+
+        
+    
+
+</body>
+</html>

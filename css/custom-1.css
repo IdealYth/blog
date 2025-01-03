@@ -1,0 +1,36 @@
+:root {
+
+   /* 
+       设置文章中的图片排列位置
+       居左：0 auto 0 0（默认）
+       居中：0 auto
+       居右：0 0 0 auto
+    */
+   --post-img-align: 0 auto;
+
+   /* 鼠标样式 */
+   body {
+      cursor: url(https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071208706.cur), auto;
+   }
+
+   a {
+      cursor: url(https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071205091.cur), auto !important;
+   }
+
+
+   /* 头像旋转 */
+   .avatar-box {
+      img {
+         transition: transform 1.0s ease-out;
+      }
+
+      img:hover {
+         transform: rotateZ(360deg);
+      }
+
+      .posts-expand .post-body img:hover {
+         transform: initial;
+      }
+   }
+
+}
